@@ -228,7 +228,7 @@ proc create_root_design { parentCell } {
    CONFIG.Increment_Value {2710} \
    CONFIG.Output_Width {14} \
    CONFIG.Restrict_Count {true} \
-   CONFIG.SCLR {false} \
+   CONFIG.SCLR {true} \
    CONFIG.Sync_Threshold_Output {true} \
    CONFIG.Threshold_Value {2710} \
  ] $bin_counter_load_clock
@@ -240,7 +240,7 @@ proc create_root_design { parentCell } {
    CONFIG.Increment_Value {7D0} \
    CONFIG.Output_Width {11} \
    CONFIG.Restrict_Count {true} \
-   CONFIG.SCLR {false} \
+   CONFIG.SCLR {true} \
    CONFIG.Sync_Threshold_Output {true} \
    CONFIG.Threshold_Value {7D0} \
  ] $c_counter_binary_0
@@ -271,10 +271,11 @@ proc create_root_design { parentCell } {
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
    CONFIG.NUM_OUT_CLKS {2} \
    CONFIG.PRIMITIVE {PLL} \
+   CONFIG.RESET_BOARD_INTERFACE {reset} \
    CONFIG.RESET_PORT {resetn} \
    CONFIG.RESET_TYPE {ACTIVE_LOW} \
    CONFIG.USE_BOARD_FLOW {true} \
-   CONFIG.USE_LOCKED {false} \
+   CONFIG.USE_LOCKED {true} \
    CONFIG.USE_SAFE_CLOCK_STARTUP {true} \
  ] $clk_wiz_0
 
@@ -303,6 +304,14 @@ proc create_root_design { parentCell } {
      return 1
    }
   
+  # Create instance: util_vector_logic_0, and set properties
+  set util_vector_logic_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:util_vector_logic:2.0 util_vector_logic_0 ]
+  set_property -dict [ list \
+   CONFIG.C_OPERATION {not} \
+   CONFIG.C_SIZE {1} \
+   CONFIG.LOGO_FILE {data/sym_notgate.png} \
+ ] $util_vector_logic_0
+
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
   set_property -dict [ list \
@@ -337,8 +346,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins PWM_12b_0/clk] [get_bd_pins PWM_12b_1/clk] [get_bd_pins clk_wiz_0/clk_out2]
   connect_bd_net -net comp2s12b_0_int12 [get_bd_pins comp2s12b_0/int12] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net descomp2s12b_0_uint12 [get_bd_pins PWM_12b_1/D] [get_bd_pins descomp2s12b_0/uint12]
-  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins ModeloCarga_0/resetn] [get_bd_pins PWM_12b_0/resetn] [get_bd_pins PWM_12b_1/resetn] [get_bd_pins SineWave100s_0/resetn] [get_bd_pins clk_wiz_0/resetn]
+  connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins ModeloCarga_0/resetn] [get_bd_pins PWM_12b_0/resetn] [get_bd_pins PWM_12b_1/resetn] [get_bd_pins SineWave100s_0/resetn] [get_bd_pins clk_wiz_0/resetn] [get_bd_pins util_vector_logic_0/Op1]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins bin_counter_load_clock/CLK] [get_bd_pins clk_wiz_0/clk_in1]
+  connect_bd_net -net util_vector_logic_0_Res [get_bd_pins bin_counter_load_clock/SCLR] [get_bd_pins c_counter_binary_0/SCLR] [get_bd_pins util_vector_logic_0/Res]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins ModeloCarga_0/Hzin] [get_bd_pins xlconcat_0/dout]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins xlconcat_0/In1] [get_bd_pins xlconstant_0/dout]
   connect_bd_net -net xlconstant_1_dout [get_bd_pins ModeloCarga_0/clk_enable] [get_bd_pins PWM_12b_0/enable] [get_bd_pins PWM_12b_1/enable] [get_bd_pins SineWave100s_0/enable] [get_bd_pins conts_1logico/dout]

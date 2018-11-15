@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Load_Test_c_counter_binary_0_0_synth_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1542247724">
   <File Type="PA-TCL" Name="Load_Test_c_counter_binary_0_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="Load_Test_c_counter_binary_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Load_Test_c_counter_binary_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="Load_Test_c_counter_binary_0_0.vds"/>
   <File Type="RDS-UTIL" Name="Load_Test_c_counter_binary_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Load_Test_c_counter_binary_0_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Load_Test_c_counter_binary_0_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="Load_Test_c_counter_binary_0_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="Load_Test_c_counter_binary_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_c_counter_binary_0_0">
     <File Path="$PSRCDIR/sources_1/bd/Load_Test/ip/Load_Test_c_counter_binary_0_0/Load_Test_c_counter_binary_0_0.xci">
       <FileInfo>

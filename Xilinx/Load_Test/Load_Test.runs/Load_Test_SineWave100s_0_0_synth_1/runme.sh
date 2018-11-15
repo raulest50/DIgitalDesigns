@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_SineWave100s_0_0_synth_1'
+HD_PWD='C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_SineWave100s_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.xpr">
+<Project Version="7" Minor="38" Path="C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="73c35e97b56d4eadb2ee7390d81dff43"/>
@@ -108,29 +108,8 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_c_counter_binary_0_1/Load_Test_c_counter_binary_0_1.xci">
-          <Proxy FileSetName="Load_Test_c_counter_binary_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlconcat_0_0/Load_Test_xlconcat_0_0.xci">
-          <Proxy FileSetName="Load_Test_xlconcat_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_PWM_12b_0_0/Load_Test_PWM_12b_0_0.xci">
-          <Proxy FileSetName="Load_Test_PWM_12b_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlslice_0_0/Load_Test_xlslice_0_0.xci">
-          <Proxy FileSetName="Load_Test_xlslice_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_c_counter_binary_0_0/Load_Test_c_counter_binary_0_0.xci">
-          <Proxy FileSetName="Load_Test_c_counter_binary_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_ModeloCarga_0_2/Load_Test_ModeloCarga_0_2.xci">
-          <Proxy FileSetName="Load_Test_ModeloCarga_0_2"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_comp2s12b_0_1/Load_Test_comp2s12b_0_1.xci">
           <Proxy FileSetName="Load_Test_comp2s12b_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlconstant_0_0/Load_Test_xlconstant_0_0.xci">
-          <Proxy FileSetName="Load_Test_xlconstant_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_descomp2s12b_0_0/Load_Test_descomp2s12b_0_0.xci">
           <Proxy FileSetName="Load_Test_descomp2s12b_0_0"/>
@@ -138,14 +117,38 @@
         <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlconstant_1_0/Load_Test_xlconstant_1_0.xci">
           <Proxy FileSetName="Load_Test_xlconstant_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_PWM_12b_0_1/Load_Test_PWM_12b_0_1.xci">
-          <Proxy FileSetName="Load_Test_PWM_12b_0_1"/>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlconstant_0_0/Load_Test_xlconstant_0_0.xci">
+          <Proxy FileSetName="Load_Test_xlconstant_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_SineWave100s_0_0/Load_Test_SineWave100s_0_0.xci">
           <Proxy FileSetName="Load_Test_SineWave100s_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_util_vector_logic_0_0/Load_Test_util_vector_logic_0_0.xci">
+          <Proxy FileSetName="Load_Test_util_vector_logic_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_ModeloCarga_0_2/Load_Test_ModeloCarga_0_2.xci">
+          <Proxy FileSetName="Load_Test_ModeloCarga_0_2"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_clk_wiz_0_0/Load_Test_clk_wiz_0_0.xci">
           <Proxy FileSetName="Load_Test_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlconcat_0_0/Load_Test_xlconcat_0_0.xci">
+          <Proxy FileSetName="Load_Test_xlconcat_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_c_counter_binary_0_1/Load_Test_c_counter_binary_0_1.xci">
+          <Proxy FileSetName="Load_Test_c_counter_binary_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_c_counter_binary_0_0/Load_Test_c_counter_binary_0_0.xci">
+          <Proxy FileSetName="Load_Test_c_counter_binary_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_xlslice_0_0/Load_Test_xlslice_0_0.xci">
+          <Proxy FileSetName="Load_Test_xlslice_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_PWM_12b_0_1/Load_Test_PWM_12b_0_1.xci">
+          <Proxy FileSetName="Load_Test_PWM_12b_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="Load_Test.bd" FileRelPathName="ip/Load_Test_PWM_12b_0_0/Load_Test_PWM_12b_0_0.xci">
+          <Proxy FileSetName="Load_Test_PWM_12b_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/Load_Test_wrapper.vhd">
@@ -187,12 +190,6 @@
         <Option Name="SrcSet" Val="sources_1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Load_Test_SineWave100s_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_SineWave100s_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Load_Test_SineWave100s_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Load_Test_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_clk_wiz_0_0">
       <Config>
         <Option Name="TopModule" Val="Load_Test_clk_wiz_0_0"/>
@@ -223,21 +220,9 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="Load_Test_PWM_12b_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_PWM_12b_0_0">
-      <Config>
-        <Option Name="TopModule" Val="Load_Test_PWM_12b_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="Load_Test_descomp2s12b_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_descomp2s12b_0_0">
       <Config>
         <Option Name="TopModule" Val="Load_Test_descomp2s12b_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="Load_Test_PWM_12b_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_PWM_12b_0_1">
-      <Config>
-        <Option Name="TopModule" Val="Load_Test_PWM_12b_0_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -265,6 +250,30 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="Load_Test_util_vector_logic_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_util_vector_logic_0_0">
+      <Config>
+        <Option Name="TopModule" Val="Load_Test_util_vector_logic_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Load_Test_SineWave100s_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_SineWave100s_0_0">
+      <Config>
+        <Option Name="TopModule" Val="Load_Test_SineWave100s_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Load_Test_PWM_12b_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_PWM_12b_0_1">
+      <Config>
+        <Option Name="TopModule" Val="Load_Test_PWM_12b_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="Load_Test_PWM_12b_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/Load_Test_PWM_12b_0_0">
+      <Config>
+        <Option Name="TopModule" Val="Load_Test_PWM_12b_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
   </FileSets>
   <Simulators>
     <Simulator Name="XSim">
@@ -285,15 +294,7 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Load_Test_SineWave100s_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_SineWave100s_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_SineWave100s_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_SineWave100s_0_0_synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
@@ -347,25 +348,7 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Load_Test_PWM_12b_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_PWM_12b_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_PWM_12b_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Load_Test_descomp2s12b_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_descomp2s12b_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_descomp2s12b_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_descomp2s12b_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Load_Test_PWM_12b_0_1_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_PWM_12b_0_1" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_PWM_12b_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
@@ -410,23 +393,51 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
+    <Run Id="Load_Test_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_util_vector_logic_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_util_vector_logic_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
       </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Load_Test_SineWave100s_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_SineWave100s_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_SineWave100s_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+    <Run Id="Load_Test_SineWave100s_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_SineWave100s_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_SineWave100s_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_SineWave100s_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_PWM_12b_0_1_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_PWM_12b_0_1" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_PWM_12b_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_PWM_12b_0_0_synth_1" Type="Ft3:Synth" SrcSet="Load_Test_PWM_12b_0_0" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/Load_Test_PWM_12b_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -439,6 +450,7 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
@@ -522,39 +534,7 @@
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="Load_Test_PWM_12b_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_PWM_12b_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
     <Run Id="Load_Test_descomp2s12b_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_descomp2s12b_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_descomp2s12b_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-    </Run>
-    <Run Id="Load_Test_PWM_12b_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_PWM_12b_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
@@ -621,6 +601,78 @@
     <Run Id="Load_Test_ModeloCarga_0_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_ModeloCarga_0_2" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_ModeloCarga_0_2_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_util_vector_logic_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_util_vector_logic_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_util_vector_logic_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_SineWave100s_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_SineWave100s_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_SineWave100s_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_PWM_12b_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_PWM_12b_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2018"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="Load_Test_PWM_12b_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a35ticsg324-1L" ConstrsSet="Load_Test_PWM_12b_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="Load_Test_PWM_12b_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

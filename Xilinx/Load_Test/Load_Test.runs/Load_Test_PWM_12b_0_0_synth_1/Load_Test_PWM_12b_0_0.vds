@@ -2,12 +2,12 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Nov 14 17:55:56 2018
-# Process ID: 1708
-# Current directory: C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1
+# Start of session at: Thu Nov 15 10:51:48 2018
+# Process ID: 16896
+# Current directory: C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1
 # Command line: vivado.exe -log Load_Test_PWM_12b_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Load_Test_PWM_12b_0_0.tcl
-# Log file: C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.vds
-# Journal file: C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1\vivado.jou
+# Log file: C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.vds
+# Journal file: C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source Load_Test_PWM_12b_0_0.tcl -notrace
 Command: synth_design -top Load_Test_PWM_12b_0_0 -part xc7a35ticsg324-1L -mode out_of_context
@@ -15,17 +15,17 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 14376 
+INFO: Helper process launched with PID 28188 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 388.727 ; gain = 101.316
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 402.082 ; gain = 100.840
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Load_Test_PWM_12b_0_0' [c:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:66]
-INFO: [Synth 8-3491] module 'PWM_12b' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:32' bound to instance 'U0' of component 'PWM_12b' [c:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'PWM_12b' [C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'PWM_12b' (1#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'Load_Test_PWM_12b_0_0' (2#1) [c:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'Load_Test_PWM_12b_0_0' [c:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:66]
+INFO: [Synth 8-3491] module 'PWM_12b' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:32' bound to instance 'U0' of component 'PWM_12b' [c:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'PWM_12b' [C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'PWM_12b' (1#1) [C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Load_Test_PWM_12b_0_0' (2#1) [c:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/synth/Load_Test_PWM_12b_0_0.vhd:66]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 443.023 ; gain = 155.613
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 456.324 ; gain = 155.082
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -38,10 +38,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 443.023 ; gain = 155.613
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 456.324 ; gain = 155.082
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 443.023 ; gain = 155.613
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 456.324 ; gain = 155.082
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -54,25 +54,25 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraint will be written out.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 718.477 ; gain = 1.941
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 733.574 ; gain = 2.324
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 718.477 ; gain = 431.066
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 733.574 ; gain = 432.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 718.477 ; gain = 431.066
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 733.574 ; gain = 432.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 718.477 ; gain = 431.066
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 733.574 ; gain = 432.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 718.477 ; gain = 431.066
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 733.574 ; gain = 432.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -114,7 +114,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 718.477 ; gain = 431.066
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 733.574 ; gain = 432.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -126,13 +126,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 751.535 ; gain = 464.125
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 764.316 ; gain = 463.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 751.609 ; gain = 464.199
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 764.316 ; gain = 463.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -144,7 +144,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -168,7 +168,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -181,7 +181,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -193,25 +193,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -242,11 +242,11 @@ Report Instance Areas:
 |2     |  U0     |PWM_12b |    33|
 +------+---------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 761.398 ; gain = 198.535
-Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 761.398 ; gain = 473.988
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 773.848 ; gain = 195.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 773.848 ; gain = 472.605
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -258,11 +258,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 16 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 772.891 ; gain = 498.609
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 785.813 ; gain = 498.223
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.dcp' has been generated.
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.runs/Load_Test_PWM_12b_0_0_synth_1/Load_Test_PWM_12b_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Load_Test_PWM_12b_0_0_utilization_synth.rpt -pb Load_Test_PWM_12b_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 773.465 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 14 17:56:54 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 786.379 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 10:52:16 2018...
