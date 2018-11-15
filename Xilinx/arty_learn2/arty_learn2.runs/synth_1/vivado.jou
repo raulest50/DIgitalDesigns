@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Nov 11 13:56:04 2018
+# Process ID: 4000
+# Current directory: C:/Users/erich/Documents/Digital_Designs/Xilinx/arty_learn2/arty_learn2.runs/synth_1
+# Command line: vivado.exe -log led_blink.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_blink.tcl
+# Log file: C:/Users/erich/Documents/Digital_Designs/Xilinx/arty_learn2/arty_learn2.runs/synth_1/led_blink.vds
+# Journal file: C:/Users/erich/Documents/Digital_Designs/Xilinx/arty_learn2/arty_learn2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source led_blink.tcl -notrace

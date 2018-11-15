@@ -1,0 +1,170 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do ModeloCarga_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 17:39:14 on Nov 10,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ModeloCarga
+# -- Compiling architecture rtl of ModeloCarga
+# End time: 17:39:15 on Nov 10,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim rtl_work.modelocarga
+# vsim -gui "+altera" -l msim_transcript -do "ModeloCarga_run_msim_rtl_vhdl.do" 
+# Start time: 17:40:32 on Nov 10,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading rtl_work.modelocarga(rtl)
+add wave  \
+sim:/modelocarga/Hzin \
+sim:/modelocarga/Hzout \
+sim:/modelocarga/ce_out \
+sim:/modelocarga/clk \
+sim:/modelocarga/clk_enable \
+sim:/modelocarga/reset
+force -freeze sim:/modelocarga/reset 1 0
+force -freeze sim:/modelocarga/clk_enable 1 0
+force -freeze sim:/modelocarga/clk 1 0, 0 {1 ps} -r 2
+force -freeze sim:/modelocarga/Hzin 600 0
+run
+force -freeze sim:/modelocarga/reset 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/modelocarga/Hzin 300 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/modelocarga/Hzin -300 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 18:37:53 on Nov 10,2018, Elapsed time: 0:57:21
+# Errors: 0, Warnings: 0

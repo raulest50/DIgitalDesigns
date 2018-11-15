@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/simulation/modelsim
+Emodelocarga
+Z1 w1541889484
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd
+Z6 FC:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd
+l0
+L41
+V<IS<KC]_Q`aNB@>LNMj<30
+!s100 =Y]7l0l_d?kIzG@0jIAd_1
+Z7 OV;C;10.3d;59
+31
+Z8 !s110 1541889554
+!i10b 1
+Z9 !s108 1541889554.152000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd|
+Z11 !s107 C:/Users/erich/Documents/Digital_Designs/Altera_tec/ModeloCarga/ModeloCarga.vhd|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+DEx4 work 11 modelocarga 0 22 <IS<KC]_Q`aNB@>LNMj<30
+l74
+L52
+VAEWVN7b>zCddTWJBO9=Ve2
+!s100 _lcFRW4Z?b``>aDlPWY_22
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

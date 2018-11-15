@@ -1,0 +1,30 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+
+entity PeriodGenrator is
+	port(
+		clock : in bit;
+		enable : in bit;
+		c : in bit;
+		T : in std_logic_vector(19 downto 0);
+		
+		p : out bit;
+	);
+end entity;
+
+
+
+
+architecture arch1 of PeriodGenrator is
+	
+	
+	
+	begin
+	
+	
+	
+	
+	
+end architecture;

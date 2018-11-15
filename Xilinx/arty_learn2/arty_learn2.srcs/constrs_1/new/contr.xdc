@@ -1,0 +1,13 @@
+set_property PACKAGE_PIN E3 [get_ports clk]
+set_property PACKAGE_PIN H5 [get_ports o1]
+set_property PACKAGE_PIN J5 [get_ports o2]
+set_property PACKAGE_PIN C2 [get_ports reset]
+set_property IOSTANDARD LVCMOS33 [get_ports o1]
+set_property IOSTANDARD LVCMOS33 [get_ports o2]
+set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports reset]
+set_property DRIVE 12 [get_ports o1]
+
+create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports clk]
+set_output_delay -clock [get_clocks clk] -min -add_delay 0.000 [get_ports o2]
+set_output_delay -clock [get_clocks clk] -max -add_delay 2.000 [get_ports o2]

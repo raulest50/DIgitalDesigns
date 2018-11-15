@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="DAC_test_c_counter_binary_0_0_synth_1" LaunchDir="C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/DAC_test_c_counter_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="DAC_test_c_counter_binary_0_0_synth_1"/>
+	</Run>
+</Runs>
+

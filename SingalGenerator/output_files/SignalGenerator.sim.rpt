@@ -1,0 +1,413 @@
+Simulator report for SignalGenerator
+Mon Oct 15 09:59:45 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 143 nodes    ;
+; Simulation Coverage         ;      24.48 % ;
+; Total Number of Transitions ; 1518         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                                             ;               ;
+; Vector input source                                                                        ; C:/Users/erich/Documents/Digital_Designs/SingalGenerator/PeriodGeneratorWVF.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      24.48 % ;
+; Total nodes checked                                 ; 143          ;
+; Total output ports checked                          ; 143          ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 108          ;
+; Total output ports with no 1-value coverage         ; 108          ;
+; Total output ports with no 0-value coverage         ; 108          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |PeriodGenerator|count[0]  ; |PeriodGenerator|count[0]  ; regout           ;
+; |PeriodGenerator|count~14  ; |PeriodGenerator|count~14  ; out              ;
+; |PeriodGenerator|count~15  ; |PeriodGenerator|count~15  ; out              ;
+; |PeriodGenerator|count~16  ; |PeriodGenerator|count~16  ; out              ;
+; |PeriodGenerator|count~17  ; |PeriodGenerator|count~17  ; out              ;
+; |PeriodGenerator|count~18  ; |PeriodGenerator|count~18  ; out              ;
+; |PeriodGenerator|count~19  ; |PeriodGenerator|count~19  ; out              ;
+; |PeriodGenerator|count~34  ; |PeriodGenerator|count~34  ; out              ;
+; |PeriodGenerator|count~35  ; |PeriodGenerator|count~35  ; out              ;
+; |PeriodGenerator|count~36  ; |PeriodGenerator|count~36  ; out              ;
+; |PeriodGenerator|count~37  ; |PeriodGenerator|count~37  ; out              ;
+; |PeriodGenerator|count~38  ; |PeriodGenerator|count~38  ; out              ;
+; |PeriodGenerator|count~39  ; |PeriodGenerator|count~39  ; out              ;
+; |PeriodGenerator|p~reg0    ; |PeriodGenerator|p~reg0    ; regout           ;
+; |PeriodGenerator|count[4]  ; |PeriodGenerator|count[4]  ; regout           ;
+; |PeriodGenerator|count[3]  ; |PeriodGenerator|count[3]  ; regout           ;
+; |PeriodGenerator|count[2]  ; |PeriodGenerator|count[2]  ; regout           ;
+; |PeriodGenerator|count[1]  ; |PeriodGenerator|count[1]  ; regout           ;
+; |PeriodGenerator|clock     ; |PeriodGenerator|clock     ; out              ;
+; |PeriodGenerator|p         ; |PeriodGenerator|p         ; pin_out          ;
+; |PeriodGenerator|Add0~0    ; |PeriodGenerator|Add0~0    ; out0             ;
+; |PeriodGenerator|Add0~1    ; |PeriodGenerator|Add0~1    ; out0             ;
+; |PeriodGenerator|Add0~2    ; |PeriodGenerator|Add0~2    ; out0             ;
+; |PeriodGenerator|Add0~3    ; |PeriodGenerator|Add0~3    ; out0             ;
+; |PeriodGenerator|Add0~4    ; |PeriodGenerator|Add0~4    ; out0             ;
+; |PeriodGenerator|Add0~5    ; |PeriodGenerator|Add0~5    ; out0             ;
+; |PeriodGenerator|Add0~6    ; |PeriodGenerator|Add0~6    ; out0             ;
+; |PeriodGenerator|Add0~7    ; |PeriodGenerator|Add0~7    ; out0             ;
+; |PeriodGenerator|Add0~8    ; |PeriodGenerator|Add0~8    ; out0             ;
+; |PeriodGenerator|Equal0~0  ; |PeriodGenerator|Equal0~0  ; out0             ;
+; |PeriodGenerator|Equal0~1  ; |PeriodGenerator|Equal0~1  ; out0             ;
+; |PeriodGenerator|Equal0~2  ; |PeriodGenerator|Equal0~2  ; out0             ;
+; |PeriodGenerator|Equal0~3  ; |PeriodGenerator|Equal0~3  ; out0             ;
+; |PeriodGenerator|Equal0~4  ; |PeriodGenerator|Equal0~4  ; out0             ;
+; |PeriodGenerator|Equal0~20 ; |PeriodGenerator|Equal0~20 ; out0             ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |PeriodGenerator|count~0   ; |PeriodGenerator|count~0   ; out              ;
+; |PeriodGenerator|count~1   ; |PeriodGenerator|count~1   ; out              ;
+; |PeriodGenerator|count~2   ; |PeriodGenerator|count~2   ; out              ;
+; |PeriodGenerator|count~3   ; |PeriodGenerator|count~3   ; out              ;
+; |PeriodGenerator|count~4   ; |PeriodGenerator|count~4   ; out              ;
+; |PeriodGenerator|count~5   ; |PeriodGenerator|count~5   ; out              ;
+; |PeriodGenerator|count~6   ; |PeriodGenerator|count~6   ; out              ;
+; |PeriodGenerator|count~7   ; |PeriodGenerator|count~7   ; out              ;
+; |PeriodGenerator|count~8   ; |PeriodGenerator|count~8   ; out              ;
+; |PeriodGenerator|count~9   ; |PeriodGenerator|count~9   ; out              ;
+; |PeriodGenerator|count~10  ; |PeriodGenerator|count~10  ; out              ;
+; |PeriodGenerator|count~11  ; |PeriodGenerator|count~11  ; out              ;
+; |PeriodGenerator|count~12  ; |PeriodGenerator|count~12  ; out              ;
+; |PeriodGenerator|count~13  ; |PeriodGenerator|count~13  ; out              ;
+; |PeriodGenerator|count~20  ; |PeriodGenerator|count~20  ; out              ;
+; |PeriodGenerator|count~21  ; |PeriodGenerator|count~21  ; out              ;
+; |PeriodGenerator|count~22  ; |PeriodGenerator|count~22  ; out              ;
+; |PeriodGenerator|count~23  ; |PeriodGenerator|count~23  ; out              ;
+; |PeriodGenerator|count~24  ; |PeriodGenerator|count~24  ; out              ;
+; |PeriodGenerator|count~25  ; |PeriodGenerator|count~25  ; out              ;
+; |PeriodGenerator|count~26  ; |PeriodGenerator|count~26  ; out              ;
+; |PeriodGenerator|count~27  ; |PeriodGenerator|count~27  ; out              ;
+; |PeriodGenerator|count~28  ; |PeriodGenerator|count~28  ; out              ;
+; |PeriodGenerator|count~29  ; |PeriodGenerator|count~29  ; out              ;
+; |PeriodGenerator|count~30  ; |PeriodGenerator|count~30  ; out              ;
+; |PeriodGenerator|count~31  ; |PeriodGenerator|count~31  ; out              ;
+; |PeriodGenerator|count~32  ; |PeriodGenerator|count~32  ; out              ;
+; |PeriodGenerator|count~33  ; |PeriodGenerator|count~33  ; out              ;
+; |PeriodGenerator|count[19] ; |PeriodGenerator|count[19] ; regout           ;
+; |PeriodGenerator|count[18] ; |PeriodGenerator|count[18] ; regout           ;
+; |PeriodGenerator|count[17] ; |PeriodGenerator|count[17] ; regout           ;
+; |PeriodGenerator|count[16] ; |PeriodGenerator|count[16] ; regout           ;
+; |PeriodGenerator|count[15] ; |PeriodGenerator|count[15] ; regout           ;
+; |PeriodGenerator|count[14] ; |PeriodGenerator|count[14] ; regout           ;
+; |PeriodGenerator|count[13] ; |PeriodGenerator|count[13] ; regout           ;
+; |PeriodGenerator|count[12] ; |PeriodGenerator|count[12] ; regout           ;
+; |PeriodGenerator|count[11] ; |PeriodGenerator|count[11] ; regout           ;
+; |PeriodGenerator|count[10] ; |PeriodGenerator|count[10] ; regout           ;
+; |PeriodGenerator|count[9]  ; |PeriodGenerator|count[9]  ; regout           ;
+; |PeriodGenerator|count[8]  ; |PeriodGenerator|count[8]  ; regout           ;
+; |PeriodGenerator|count[7]  ; |PeriodGenerator|count[7]  ; regout           ;
+; |PeriodGenerator|count[6]  ; |PeriodGenerator|count[6]  ; regout           ;
+; |PeriodGenerator|count[5]  ; |PeriodGenerator|count[5]  ; regout           ;
+; |PeriodGenerator|enable    ; |PeriodGenerator|enable    ; out              ;
+; |PeriodGenerator|reset     ; |PeriodGenerator|reset     ; out              ;
+; |PeriodGenerator|T[0]      ; |PeriodGenerator|T[0]      ; out              ;
+; |PeriodGenerator|T[1]      ; |PeriodGenerator|T[1]      ; out              ;
+; |PeriodGenerator|T[2]      ; |PeriodGenerator|T[2]      ; out              ;
+; |PeriodGenerator|T[3]      ; |PeriodGenerator|T[3]      ; out              ;
+; |PeriodGenerator|T[4]      ; |PeriodGenerator|T[4]      ; out              ;
+; |PeriodGenerator|T[5]      ; |PeriodGenerator|T[5]      ; out              ;
+; |PeriodGenerator|T[6]      ; |PeriodGenerator|T[6]      ; out              ;
+; |PeriodGenerator|T[7]      ; |PeriodGenerator|T[7]      ; out              ;
+; |PeriodGenerator|T[8]      ; |PeriodGenerator|T[8]      ; out              ;
+; |PeriodGenerator|T[9]      ; |PeriodGenerator|T[9]      ; out              ;
+; |PeriodGenerator|T[10]     ; |PeriodGenerator|T[10]     ; out              ;
+; |PeriodGenerator|T[11]     ; |PeriodGenerator|T[11]     ; out              ;
+; |PeriodGenerator|T[12]     ; |PeriodGenerator|T[12]     ; out              ;
+; |PeriodGenerator|T[13]     ; |PeriodGenerator|T[13]     ; out              ;
+; |PeriodGenerator|T[14]     ; |PeriodGenerator|T[14]     ; out              ;
+; |PeriodGenerator|T[15]     ; |PeriodGenerator|T[15]     ; out              ;
+; |PeriodGenerator|T[16]     ; |PeriodGenerator|T[16]     ; out              ;
+; |PeriodGenerator|T[17]     ; |PeriodGenerator|T[17]     ; out              ;
+; |PeriodGenerator|T[18]     ; |PeriodGenerator|T[18]     ; out              ;
+; |PeriodGenerator|T[19]     ; |PeriodGenerator|T[19]     ; out              ;
+; |PeriodGenerator|Add0~9    ; |PeriodGenerator|Add0~9    ; out0             ;
+; |PeriodGenerator|Add0~10   ; |PeriodGenerator|Add0~10   ; out0             ;
+; |PeriodGenerator|Add0~11   ; |PeriodGenerator|Add0~11   ; out0             ;
+; |PeriodGenerator|Add0~12   ; |PeriodGenerator|Add0~12   ; out0             ;
+; |PeriodGenerator|Add0~13   ; |PeriodGenerator|Add0~13   ; out0             ;
+; |PeriodGenerator|Add0~14   ; |PeriodGenerator|Add0~14   ; out0             ;
+; |PeriodGenerator|Add0~15   ; |PeriodGenerator|Add0~15   ; out0             ;
+; |PeriodGenerator|Add0~16   ; |PeriodGenerator|Add0~16   ; out0             ;
+; |PeriodGenerator|Add0~17   ; |PeriodGenerator|Add0~17   ; out0             ;
+; |PeriodGenerator|Add0~18   ; |PeriodGenerator|Add0~18   ; out0             ;
+; |PeriodGenerator|Add0~19   ; |PeriodGenerator|Add0~19   ; out0             ;
+; |PeriodGenerator|Add0~20   ; |PeriodGenerator|Add0~20   ; out0             ;
+; |PeriodGenerator|Add0~21   ; |PeriodGenerator|Add0~21   ; out0             ;
+; |PeriodGenerator|Add0~22   ; |PeriodGenerator|Add0~22   ; out0             ;
+; |PeriodGenerator|Add0~23   ; |PeriodGenerator|Add0~23   ; out0             ;
+; |PeriodGenerator|Add0~24   ; |PeriodGenerator|Add0~24   ; out0             ;
+; |PeriodGenerator|Add0~25   ; |PeriodGenerator|Add0~25   ; out0             ;
+; |PeriodGenerator|Add0~26   ; |PeriodGenerator|Add0~26   ; out0             ;
+; |PeriodGenerator|Add0~27   ; |PeriodGenerator|Add0~27   ; out0             ;
+; |PeriodGenerator|Add0~28   ; |PeriodGenerator|Add0~28   ; out0             ;
+; |PeriodGenerator|Add0~29   ; |PeriodGenerator|Add0~29   ; out0             ;
+; |PeriodGenerator|Add0~30   ; |PeriodGenerator|Add0~30   ; out0             ;
+; |PeriodGenerator|Add0~31   ; |PeriodGenerator|Add0~31   ; out0             ;
+; |PeriodGenerator|Add0~32   ; |PeriodGenerator|Add0~32   ; out0             ;
+; |PeriodGenerator|Add0~33   ; |PeriodGenerator|Add0~33   ; out0             ;
+; |PeriodGenerator|Add0~34   ; |PeriodGenerator|Add0~34   ; out0             ;
+; |PeriodGenerator|Add0~35   ; |PeriodGenerator|Add0~35   ; out0             ;
+; |PeriodGenerator|Add0~36   ; |PeriodGenerator|Add0~36   ; out0             ;
+; |PeriodGenerator|Equal0~5  ; |PeriodGenerator|Equal0~5  ; out0             ;
+; |PeriodGenerator|Equal0~6  ; |PeriodGenerator|Equal0~6  ; out0             ;
+; |PeriodGenerator|Equal0~7  ; |PeriodGenerator|Equal0~7  ; out0             ;
+; |PeriodGenerator|Equal0~8  ; |PeriodGenerator|Equal0~8  ; out0             ;
+; |PeriodGenerator|Equal0~9  ; |PeriodGenerator|Equal0~9  ; out0             ;
+; |PeriodGenerator|Equal0~10 ; |PeriodGenerator|Equal0~10 ; out0             ;
+; |PeriodGenerator|Equal0~11 ; |PeriodGenerator|Equal0~11 ; out0             ;
+; |PeriodGenerator|Equal0~12 ; |PeriodGenerator|Equal0~12 ; out0             ;
+; |PeriodGenerator|Equal0~13 ; |PeriodGenerator|Equal0~13 ; out0             ;
+; |PeriodGenerator|Equal0~14 ; |PeriodGenerator|Equal0~14 ; out0             ;
+; |PeriodGenerator|Equal0~15 ; |PeriodGenerator|Equal0~15 ; out0             ;
+; |PeriodGenerator|Equal0~16 ; |PeriodGenerator|Equal0~16 ; out0             ;
+; |PeriodGenerator|Equal0~17 ; |PeriodGenerator|Equal0~17 ; out0             ;
+; |PeriodGenerator|Equal0~18 ; |PeriodGenerator|Equal0~18 ; out0             ;
+; |PeriodGenerator|Equal0~19 ; |PeriodGenerator|Equal0~19 ; out0             ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |PeriodGenerator|count~0   ; |PeriodGenerator|count~0   ; out              ;
+; |PeriodGenerator|count~1   ; |PeriodGenerator|count~1   ; out              ;
+; |PeriodGenerator|count~2   ; |PeriodGenerator|count~2   ; out              ;
+; |PeriodGenerator|count~3   ; |PeriodGenerator|count~3   ; out              ;
+; |PeriodGenerator|count~4   ; |PeriodGenerator|count~4   ; out              ;
+; |PeriodGenerator|count~5   ; |PeriodGenerator|count~5   ; out              ;
+; |PeriodGenerator|count~6   ; |PeriodGenerator|count~6   ; out              ;
+; |PeriodGenerator|count~7   ; |PeriodGenerator|count~7   ; out              ;
+; |PeriodGenerator|count~8   ; |PeriodGenerator|count~8   ; out              ;
+; |PeriodGenerator|count~9   ; |PeriodGenerator|count~9   ; out              ;
+; |PeriodGenerator|count~10  ; |PeriodGenerator|count~10  ; out              ;
+; |PeriodGenerator|count~11  ; |PeriodGenerator|count~11  ; out              ;
+; |PeriodGenerator|count~12  ; |PeriodGenerator|count~12  ; out              ;
+; |PeriodGenerator|count~13  ; |PeriodGenerator|count~13  ; out              ;
+; |PeriodGenerator|count~20  ; |PeriodGenerator|count~20  ; out              ;
+; |PeriodGenerator|count~21  ; |PeriodGenerator|count~21  ; out              ;
+; |PeriodGenerator|count~22  ; |PeriodGenerator|count~22  ; out              ;
+; |PeriodGenerator|count~23  ; |PeriodGenerator|count~23  ; out              ;
+; |PeriodGenerator|count~24  ; |PeriodGenerator|count~24  ; out              ;
+; |PeriodGenerator|count~25  ; |PeriodGenerator|count~25  ; out              ;
+; |PeriodGenerator|count~26  ; |PeriodGenerator|count~26  ; out              ;
+; |PeriodGenerator|count~27  ; |PeriodGenerator|count~27  ; out              ;
+; |PeriodGenerator|count~28  ; |PeriodGenerator|count~28  ; out              ;
+; |PeriodGenerator|count~29  ; |PeriodGenerator|count~29  ; out              ;
+; |PeriodGenerator|count~30  ; |PeriodGenerator|count~30  ; out              ;
+; |PeriodGenerator|count~31  ; |PeriodGenerator|count~31  ; out              ;
+; |PeriodGenerator|count~32  ; |PeriodGenerator|count~32  ; out              ;
+; |PeriodGenerator|count~33  ; |PeriodGenerator|count~33  ; out              ;
+; |PeriodGenerator|count[19] ; |PeriodGenerator|count[19] ; regout           ;
+; |PeriodGenerator|count[18] ; |PeriodGenerator|count[18] ; regout           ;
+; |PeriodGenerator|count[17] ; |PeriodGenerator|count[17] ; regout           ;
+; |PeriodGenerator|count[16] ; |PeriodGenerator|count[16] ; regout           ;
+; |PeriodGenerator|count[15] ; |PeriodGenerator|count[15] ; regout           ;
+; |PeriodGenerator|count[14] ; |PeriodGenerator|count[14] ; regout           ;
+; |PeriodGenerator|count[13] ; |PeriodGenerator|count[13] ; regout           ;
+; |PeriodGenerator|count[12] ; |PeriodGenerator|count[12] ; regout           ;
+; |PeriodGenerator|count[11] ; |PeriodGenerator|count[11] ; regout           ;
+; |PeriodGenerator|count[10] ; |PeriodGenerator|count[10] ; regout           ;
+; |PeriodGenerator|count[9]  ; |PeriodGenerator|count[9]  ; regout           ;
+; |PeriodGenerator|count[8]  ; |PeriodGenerator|count[8]  ; regout           ;
+; |PeriodGenerator|count[7]  ; |PeriodGenerator|count[7]  ; regout           ;
+; |PeriodGenerator|count[6]  ; |PeriodGenerator|count[6]  ; regout           ;
+; |PeriodGenerator|count[5]  ; |PeriodGenerator|count[5]  ; regout           ;
+; |PeriodGenerator|enable    ; |PeriodGenerator|enable    ; out              ;
+; |PeriodGenerator|reset     ; |PeriodGenerator|reset     ; out              ;
+; |PeriodGenerator|T[0]      ; |PeriodGenerator|T[0]      ; out              ;
+; |PeriodGenerator|T[1]      ; |PeriodGenerator|T[1]      ; out              ;
+; |PeriodGenerator|T[2]      ; |PeriodGenerator|T[2]      ; out              ;
+; |PeriodGenerator|T[3]      ; |PeriodGenerator|T[3]      ; out              ;
+; |PeriodGenerator|T[4]      ; |PeriodGenerator|T[4]      ; out              ;
+; |PeriodGenerator|T[5]      ; |PeriodGenerator|T[5]      ; out              ;
+; |PeriodGenerator|T[6]      ; |PeriodGenerator|T[6]      ; out              ;
+; |PeriodGenerator|T[7]      ; |PeriodGenerator|T[7]      ; out              ;
+; |PeriodGenerator|T[8]      ; |PeriodGenerator|T[8]      ; out              ;
+; |PeriodGenerator|T[9]      ; |PeriodGenerator|T[9]      ; out              ;
+; |PeriodGenerator|T[10]     ; |PeriodGenerator|T[10]     ; out              ;
+; |PeriodGenerator|T[11]     ; |PeriodGenerator|T[11]     ; out              ;
+; |PeriodGenerator|T[12]     ; |PeriodGenerator|T[12]     ; out              ;
+; |PeriodGenerator|T[13]     ; |PeriodGenerator|T[13]     ; out              ;
+; |PeriodGenerator|T[14]     ; |PeriodGenerator|T[14]     ; out              ;
+; |PeriodGenerator|T[15]     ; |PeriodGenerator|T[15]     ; out              ;
+; |PeriodGenerator|T[16]     ; |PeriodGenerator|T[16]     ; out              ;
+; |PeriodGenerator|T[17]     ; |PeriodGenerator|T[17]     ; out              ;
+; |PeriodGenerator|T[18]     ; |PeriodGenerator|T[18]     ; out              ;
+; |PeriodGenerator|T[19]     ; |PeriodGenerator|T[19]     ; out              ;
+; |PeriodGenerator|Add0~9    ; |PeriodGenerator|Add0~9    ; out0             ;
+; |PeriodGenerator|Add0~10   ; |PeriodGenerator|Add0~10   ; out0             ;
+; |PeriodGenerator|Add0~11   ; |PeriodGenerator|Add0~11   ; out0             ;
+; |PeriodGenerator|Add0~12   ; |PeriodGenerator|Add0~12   ; out0             ;
+; |PeriodGenerator|Add0~13   ; |PeriodGenerator|Add0~13   ; out0             ;
+; |PeriodGenerator|Add0~14   ; |PeriodGenerator|Add0~14   ; out0             ;
+; |PeriodGenerator|Add0~15   ; |PeriodGenerator|Add0~15   ; out0             ;
+; |PeriodGenerator|Add0~16   ; |PeriodGenerator|Add0~16   ; out0             ;
+; |PeriodGenerator|Add0~17   ; |PeriodGenerator|Add0~17   ; out0             ;
+; |PeriodGenerator|Add0~18   ; |PeriodGenerator|Add0~18   ; out0             ;
+; |PeriodGenerator|Add0~19   ; |PeriodGenerator|Add0~19   ; out0             ;
+; |PeriodGenerator|Add0~20   ; |PeriodGenerator|Add0~20   ; out0             ;
+; |PeriodGenerator|Add0~21   ; |PeriodGenerator|Add0~21   ; out0             ;
+; |PeriodGenerator|Add0~22   ; |PeriodGenerator|Add0~22   ; out0             ;
+; |PeriodGenerator|Add0~23   ; |PeriodGenerator|Add0~23   ; out0             ;
+; |PeriodGenerator|Add0~24   ; |PeriodGenerator|Add0~24   ; out0             ;
+; |PeriodGenerator|Add0~25   ; |PeriodGenerator|Add0~25   ; out0             ;
+; |PeriodGenerator|Add0~26   ; |PeriodGenerator|Add0~26   ; out0             ;
+; |PeriodGenerator|Add0~27   ; |PeriodGenerator|Add0~27   ; out0             ;
+; |PeriodGenerator|Add0~28   ; |PeriodGenerator|Add0~28   ; out0             ;
+; |PeriodGenerator|Add0~29   ; |PeriodGenerator|Add0~29   ; out0             ;
+; |PeriodGenerator|Add0~30   ; |PeriodGenerator|Add0~30   ; out0             ;
+; |PeriodGenerator|Add0~31   ; |PeriodGenerator|Add0~31   ; out0             ;
+; |PeriodGenerator|Add0~32   ; |PeriodGenerator|Add0~32   ; out0             ;
+; |PeriodGenerator|Add0~33   ; |PeriodGenerator|Add0~33   ; out0             ;
+; |PeriodGenerator|Add0~34   ; |PeriodGenerator|Add0~34   ; out0             ;
+; |PeriodGenerator|Add0~35   ; |PeriodGenerator|Add0~35   ; out0             ;
+; |PeriodGenerator|Add0~36   ; |PeriodGenerator|Add0~36   ; out0             ;
+; |PeriodGenerator|Equal0~5  ; |PeriodGenerator|Equal0~5  ; out0             ;
+; |PeriodGenerator|Equal0~6  ; |PeriodGenerator|Equal0~6  ; out0             ;
+; |PeriodGenerator|Equal0~7  ; |PeriodGenerator|Equal0~7  ; out0             ;
+; |PeriodGenerator|Equal0~8  ; |PeriodGenerator|Equal0~8  ; out0             ;
+; |PeriodGenerator|Equal0~9  ; |PeriodGenerator|Equal0~9  ; out0             ;
+; |PeriodGenerator|Equal0~10 ; |PeriodGenerator|Equal0~10 ; out0             ;
+; |PeriodGenerator|Equal0~11 ; |PeriodGenerator|Equal0~11 ; out0             ;
+; |PeriodGenerator|Equal0~12 ; |PeriodGenerator|Equal0~12 ; out0             ;
+; |PeriodGenerator|Equal0~13 ; |PeriodGenerator|Equal0~13 ; out0             ;
+; |PeriodGenerator|Equal0~14 ; |PeriodGenerator|Equal0~14 ; out0             ;
+; |PeriodGenerator|Equal0~15 ; |PeriodGenerator|Equal0~15 ; out0             ;
+; |PeriodGenerator|Equal0~16 ; |PeriodGenerator|Equal0~16 ; out0             ;
+; |PeriodGenerator|Equal0~17 ; |PeriodGenerator|Equal0~17 ; out0             ;
+; |PeriodGenerator|Equal0~18 ; |PeriodGenerator|Equal0~18 ; out0             ;
+; |PeriodGenerator|Equal0~19 ; |PeriodGenerator|Equal0~19 ; out0             ;
++----------------------------+----------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Oct 15 09:59:45 2018
+Info: Command: quartus_sim --simulation_results_format=VWF SignalGenerator -c SignalGenerator
+Info (324025): Using vector source file "C:/Users/erich/Documents/Digital_Designs/SingalGenerator/PeriodGeneratorWVF.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is      24.48 %
+Info (328052): Number of transitions in simulation is 1518
+Info (324045): Vector file SignalGenerator.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4468 megabytes
+    Info: Processing ended: Mon Oct 15 09:59:45 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

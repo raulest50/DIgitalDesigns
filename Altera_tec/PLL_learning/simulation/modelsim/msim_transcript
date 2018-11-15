@@ -1,0 +1,94 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do PLLearn_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/erich/Documents/Digital_Designs/Altera_tec/PLL_learning/PLL1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 11:47:37 on Nov 08,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/erich/Documents/Digital_Designs/Altera_tec/PLL_learning/PLL1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PLL1
+# -- Compiling architecture SYN of pll1
+# End time: 11:47:38 on Nov 08,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.pll1
+# vsim -gui "+altera" -l msim_transcript -do "PLLearn_run_msim_rtl_vhdl.do" 
+# Start time: 11:47:42 on Nov 08,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pll1(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.mf_pllpack(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading altera_mf.altpll(behavior)
+# Loading altera_mf.mf_stratixii_pll(vital_pll)
+# Loading altera_mf.arm_m_cntr(behave)
+# Loading altera_mf.arm_n_cntr(behave)
+# Loading altera_mf.arm_scale_cntr(behave)
+add wave  \
+sim:/pll1/areset \
+sim:/pll1/inclk0 \
+sim:/pll1/c0 \
+sim:/pll1/locked
+force -freeze sim:/pll1/inclk0 1 0, 0 {5 ps} -r 10
+run
+# ** Note: Cyclone II PLL is enabled
+#    Time: 0 ps  Iteration: 2  Instance: /pll1/altpll_component/CYCLONEII_ALTPLL/M3
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/pll1/areset 1 0
+run
+# ** Note: Cyclone II PLL was reset
+#    Time: 18 ps  Iteration: 2  Instance: /pll1/altpll_component/CYCLONEII_ALTPLL/M3
+run
+run
+run
+run
+run
+noforce sim:/pll1/c0
+noforce sim:/pll1/locked
+run
+run
+run
+run
+run
+add wave -r /*
+run
+run
+run
+run
+run
+run
+run
+run
+quit -sim

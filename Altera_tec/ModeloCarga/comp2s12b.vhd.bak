@@ -1,0 +1,21 @@
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+-- sistema para hacer conversion a complemento a 2 de 12 bits
+entity comp2s12b is
+ port(
+	uint12 : in std_logic_vector(11 downto 0);
+	int12 : out std_logic_vector(11 downto 0)
+ );
+ end entity;
+ 
+ 
+ architecture rtl of comp2s12b is
+	begin
+	
+		int12 <= int12 - 2048;
+		
+end architecture;

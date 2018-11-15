@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="Load_Test_ModeloCarga_0_2_synth_1" LaunchDir="C:/Users/erich/Documents/Digital_Designs/Xilinx/Load_Test/Load_Test.runs/Load_Test_ModeloCarga_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
