@@ -1,8 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/imports/Xilinx/Tab_sin_100/Tab_sin_100.srcs/sources_1/imports/new/SineWave100s.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity SineWave100s
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_c_counter_binary_0_0/sim/Load_Test_c_counter_binary_0_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Load_Test_c_counter_binary_0_0
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_c_counter_binary_0_1/sim/Load_Test_c_counter_binary_0_1.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Load_Test_c_counter_binary_0_1
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/RaulEsteban/DIgitalDesigns/Xilinx/Load_Test/Load_Test.srcs/sources_1/bd/Load_Test/sim/Load_Test.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Load_Test

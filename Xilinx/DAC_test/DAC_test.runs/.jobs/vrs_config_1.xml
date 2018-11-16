@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="DAC_test_clk_wiz_0_0_synth_1" LaunchDir="C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/DAC_test_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
