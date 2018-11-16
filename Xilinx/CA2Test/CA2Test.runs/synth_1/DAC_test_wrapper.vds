@@ -2,44 +2,52 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Nov 14 09:04:32 2018
-# Process ID: 13960
-# Current directory: C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1
+# Start of session at: Thu Nov 15 15:25:32 2018
+# Process ID: 28188
+# Current directory: C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1
 # Command line: vivado.exe -log DAC_test_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DAC_test_wrapper.tcl
-# Log file: C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/DAC_test_wrapper.vds
-# Journal file: C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1\vivado.jou
+# Log file: C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/DAC_test_wrapper.vds
+# Journal file: C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source DAC_test_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-add_files: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 281.547 ; gain = 33.570
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 294.645 ; gain = 30.352
 Command: synth_design -top DAC_test_wrapper -part xc7a35ticsg324-1L
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11980 
+INFO: Helper process launched with PID 25280 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 392.141 ; gain = 99.129
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 407.914 ; gain = 101.813
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'DAC_test_wrapper' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:22]
-INFO: [Synth 8-3491] module 'DAC_test' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:14' bound to instance 'DAC_test_i' of component 'DAC_test' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:31]
-INFO: [Synth 8-638] synthesizing module 'DAC_test' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:26]
-INFO: [Synth 8-3491] module 'DAC_test_PWM_12b_0_0' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_PWM_12b_0_0_stub.vhdl:5' bound to instance 'PWM_12b_0' of component 'DAC_test_PWM_12b_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:85]
-INFO: [Synth 8-638] synthesizing module 'DAC_test_PWM_12b_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_PWM_12b_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'DAC_test_SineWave100s_0_0' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_SineWave100s_0_0_stub.vhdl:5' bound to instance 'SineWave100s_0' of component 'DAC_test_SineWave100s_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:93]
-INFO: [Synth 8-638] synthesizing module 'DAC_test_SineWave100s_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_SineWave100s_0_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'DAC_test_c_counter_binary_0_0' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_c_counter_binary_0_0_stub.vhdl:5' bound to instance 'c_counter_binary_0' of component 'DAC_test_c_counter_binary_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:100]
-INFO: [Synth 8-638] synthesizing module 'DAC_test_c_counter_binary_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_c_counter_binary_0_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'DAC_test_clk_wiz_0_0' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'DAC_test_clk_wiz_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'DAC_test_clk_wiz_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_clk_wiz_0_0_stub.vhdl:16]
-INFO: [Synth 8-3491] module 'DAC_test_xlconstant_0_0' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'DAC_test_xlconstant_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'DAC_test_xlconstant_0_0' [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/.Xil/Vivado-13960-24GHZi7/realtime/DAC_test_xlconstant_0_0_stub.vhdl:12]
-INFO: [Synth 8-256] done synthesizing module 'DAC_test' (1#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:26]
-INFO: [Synth 8-256] done synthesizing module 'DAC_test_wrapper' (2#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_wrapper' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:24]
+INFO: [Synth 8-3491] module 'DAC_test' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:14' bound to instance 'DAC_test_i' of component 'DAC_test' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'DAC_test' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:28]
+INFO: [Synth 8-3491] module 'DAC_test_PWM_12b_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_0_0_stub.vhdl:5' bound to instance 'PWM_12b_0' of component 'DAC_test_PWM_12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_PWM_12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DAC_test_PWM_12b_0_1' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_0_1_stub.vhdl:5' bound to instance 'PWM_12b_1' of component 'DAC_test_PWM_12b_0_1' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_PWM_12b_0_1' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_0_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DAC_test_PWM_12b_1_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_1_0_stub.vhdl:5' bound to instance 'PWM_12b_2' of component 'DAC_test_PWM_12b_1_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:139]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_PWM_12b_1_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_PWM_12b_1_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DAC_test_SineWave100s_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_SineWave100s_0_0_stub.vhdl:5' bound to instance 'SineWave100s_0' of component 'DAC_test_SineWave100s_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_SineWave100s_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_SineWave100s_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'DAC_test_c_counter_binary_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_c_counter_binary_0_0_stub.vhdl:5' bound to instance 'c_counter_binary_0' of component 'DAC_test_c_counter_binary_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_c_counter_binary_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_c_counter_binary_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'DAC_test_clk_wiz_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_clk_wiz_0_0_stub.vhdl:5' bound to instance 'clk_wiz_0' of component 'DAC_test_clk_wiz_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:160]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_clk_wiz_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_clk_wiz_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'DAC_test_comp2s12b_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_comp2s12b_0_0_stub.vhdl:5' bound to instance 'comp2s12b_0' of component 'DAC_test_comp2s12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:168]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_comp2s12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_comp2s12b_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'DAC_test_descomp2s12b_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_descomp2s12b_0_0_stub.vhdl:5' bound to instance 'descomp2s12b_0' of component 'DAC_test_descomp2s12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_descomp2s12b_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_descomp2s12b_0_0_stub.vhdl:13]
+INFO: [Synth 8-3491] module 'DAC_test_xlconstant_0_0' declared at 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_xlconstant_0_0_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'DAC_test_xlconstant_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'DAC_test_xlconstant_0_0' [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/.Xil/Vivado-28188-LABPRYV-D128597/realtime/DAC_test_xlconstant_0_0_stub.vhdl:12]
+INFO: [Synth 8-256] done synthesizing module 'DAC_test' (1#1) [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/synth/DAC_test.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'DAC_test_wrapper' (2#1) [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/imports/hdl/DAC_test_wrapper.vhd:24]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 446.391 ; gain = 153.379
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 463.551 ; gain = 157.449
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -52,69 +60,92 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 446.391 ; gain = 153.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 463.551 ; gain = 157.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 446.391 ; gain = 153.379
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 463.551 ; gain = 157.449
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc] for cell 'DAC_test_i/clk_wiz_0'
-Finished Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc] for cell 'DAC_test_i/clk_wiz_0'
-Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_0'
-Finished Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_0'
-Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0_in_context.xdc] for cell 'DAC_test_i/c_counter_binary_0'
-Finished Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0_in_context.xdc] for cell 'DAC_test_i/c_counter_binary_0'
-Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0_in_context.xdc] for cell 'DAC_test_i/SineWave100s_0'
-Finished Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0_in_context.xdc] for cell 'DAC_test_i/SineWave100s_0'
-Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0_in_context.xdc] for cell 'DAC_test_i/xlconstant_0'
-Finished Parsing XDC File [c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0_in_context.xdc] for cell 'DAC_test_i/xlconstant_0'
-Parsing XDC File [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc]
-WARNING: [Vivado 12-508] No pins matched 'DAC_test_i/clk_wiz_0/inst/plle2_adv_inst/CLKOUT0'. [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc:12]
-WARNING: [Vivado 12-508] No pins matched 'DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/i_out_q_thresh0.q_thresh0_i_reg/Q'. [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc:12]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc:13]
-INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc:14]
-Finished Parsing XDC File [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/DAC_test_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/constrs_1/new/restricciones.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DAC_test_wrapper_propImpl.xdc].
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc] for cell 'DAC_test_i/clk_wiz_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc] for cell 'DAC_test_i/clk_wiz_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0/DAC_test_PWM_12b_0_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0_in_context.xdc] for cell 'DAC_test_i/c_counter_binary_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0/DAC_test_c_counter_binary_0_0_in_context.xdc] for cell 'DAC_test_i/c_counter_binary_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0_in_context.xdc] for cell 'DAC_test_i/SineWave100s_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0/DAC_test_SineWave100s_0_0_in_context.xdc] for cell 'DAC_test_i/SineWave100s_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0_in_context.xdc] for cell 'DAC_test_i/xlconstant_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0_in_context.xdc] for cell 'DAC_test_i/xlconstant_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_comp2s12b_0_0/DAC_test_comp2s12b_0_0/DAC_test_comp2s12b_0_0_in_context.xdc] for cell 'DAC_test_i/comp2s12b_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_comp2s12b_0_0/DAC_test_comp2s12b_0_0/DAC_test_comp2s12b_0_0_in_context.xdc] for cell 'DAC_test_i/comp2s12b_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_1/DAC_test_PWM_12b_0_1/DAC_test_PWM_12b_0_1_in_context.xdc] for cell 'DAC_test_i/PWM_12b_1'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_0_1/DAC_test_PWM_12b_0_1/DAC_test_PWM_12b_0_1_in_context.xdc] for cell 'DAC_test_i/PWM_12b_1'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_descomp2s12b_0_0/DAC_test_descomp2s12b_0_0/DAC_test_descomp2s12b_0_0_in_context.xdc] for cell 'DAC_test_i/descomp2s12b_0'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_descomp2s12b_0_0/DAC_test_descomp2s12b_0_0/DAC_test_descomp2s12b_0_0_in_context.xdc] for cell 'DAC_test_i/descomp2s12b_0'
+Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_1_0/DAC_test_PWM_12b_1_0/DAC_test_PWM_12b_1_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_2'
+Finished Parsing XDC File [c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_PWM_12b_1_0/DAC_test_PWM_12b_1_0/DAC_test_PWM_12b_1_0_in_context.xdc] for cell 'DAC_test_i/PWM_12b_2'
+Parsing XDC File [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:2]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:4]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:5]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:7]
+WARNING: [Vivado 12-627] No clocks matched 'VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:12]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:12]
+WARNING: [Vivado 12-627] No clocks matched 'VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:13]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'PWM_0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:13]
+WARNING: [Vivado 12-508] No pins matched 'DAC_test_i/clk_wiz_0/inst/plle2_adv_inst/CLKOUT0'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:22]
+WARNING: [Vivado 12-508] No pins matched 'DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/i_out_q_thresh0.q_thresh0_i_reg/Q'. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:22]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:23]
+INFO: [Constraints 18-483] create_clock: no pin(s)/port(s)/net(s) specified as objects, only virtual clock 'VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0' will be created. If you don't want this, please specify pin(s)/ports(s)/net(s) as objects to the command. [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc:24]
+Finished Parsing XDC File [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/DAC_test_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/constrs_1/new/restricciones.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/DAC_test_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/DAC_test_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 716.609 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 750.387 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 716.609 ; gain = 423.598
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 750.387 ; gain = 444.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticsg324-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 716.609 ; gain = 423.598
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 750.387 ; gain = 444.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.srcs/sources_1/bd/DAC_test/ip/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0/DAC_test_clk_wiz_0_0_in_context.xdc, line 5).
 Applied set_property DONT_TOUCH = true for DAC_test_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DAC_test_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DAC_test_i/PWM_12b_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DAC_test_i/c_counter_binary_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DAC_test_i/SineWave100s_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for DAC_test_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DAC_test_i/comp2s12b_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DAC_test_i/PWM_12b_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DAC_test_i/descomp2s12b_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for DAC_test_i/PWM_12b_2. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 716.609 ; gain = 423.598
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 750.387 ; gain = 444.285
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 716.609 ; gain = 423.598
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 750.387 ; gain = 444.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -150,7 +181,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 716.609 ; gain = 423.598
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 750.387 ; gain = 444.285
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -165,13 +196,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'DAC_test_i/clk_wiz_0/clk_
 INFO: [Synth 8-5578] Moved timing constraint from pin 'DAC_test_i/clk_wiz_0/clk_out2' to pin 'DAC_test_i/clk_wiz_0/bbstub_clk_out2/O'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 747.492 ; gain = 454.480
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 759.297 ; gain = 453.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 747.492 ; gain = 454.480
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 759.297 ; gain = 453.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -183,7 +214,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 747.559 ; gain = 454.547
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 759.297 ; gain = 453.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -207,7 +238,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -220,7 +251,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -232,25 +263,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -261,10 +292,14 @@ Report BlackBoxes:
 |      |BlackBox name                 |Instances |
 +------+------------------------------+----------+
 |1     |DAC_test_PWM_12b_0_0          |         1|
-|2     |DAC_test_SineWave100s_0_0     |         1|
-|3     |DAC_test_c_counter_binary_0_0 |         1|
-|4     |DAC_test_clk_wiz_0_0          |         1|
-|5     |DAC_test_xlconstant_0_0       |         1|
+|2     |DAC_test_PWM_12b_0_1          |         1|
+|3     |DAC_test_PWM_12b_1_0          |         1|
+|4     |DAC_test_SineWave100s_0_0     |         1|
+|5     |DAC_test_c_counter_binary_0_0 |         1|
+|6     |DAC_test_clk_wiz_0_0          |         1|
+|7     |DAC_test_comp2s12b_0_0        |         1|
+|8     |DAC_test_descomp2s12b_0_0     |         1|
+|9     |DAC_test_xlconstant_0_0       |         1|
 +------+------------------------------+----------+
 
 Report Cell Usage: 
@@ -272,27 +307,31 @@ Report Cell Usage:
 |      |Cell                                 |Count |
 +------+-------------------------------------+------+
 |1     |DAC_test_PWM_12b_0_0_bbox_0          |     1|
-|2     |DAC_test_SineWave100s_0_0_bbox_1     |     1|
-|3     |DAC_test_c_counter_binary_0_0_bbox_2 |     1|
-|4     |DAC_test_clk_wiz_0_0_bbox_3          |     1|
-|5     |DAC_test_xlconstant_0_0_bbox_4       |     1|
-|6     |IBUF                                 |     1|
-|7     |OBUF                                 |     1|
+|2     |DAC_test_PWM_12b_0_1_bbox_1          |     1|
+|3     |DAC_test_PWM_12b_1_0_bbox_2          |     1|
+|4     |DAC_test_SineWave100s_0_0_bbox_3     |     1|
+|5     |DAC_test_c_counter_binary_0_0_bbox_4 |     1|
+|6     |DAC_test_clk_wiz_0_0_bbox_5          |     1|
+|7     |DAC_test_comp2s12b_0_0_bbox_6        |     1|
+|8     |DAC_test_descomp2s12b_0_0_bbox_7     |     1|
+|9     |DAC_test_xlconstant_0_0_bbox_8       |     1|
+|10    |IBUF                                 |     1|
+|11    |OBUF                                 |     3|
 +------+-------------------------------------+------+
 
 Report Instance Areas: 
 +------+-------------+---------+------+
 |      |Instance     |Module   |Cells |
 +------+-------------+---------+------+
-|1     |top          |         |    31|
-|2     |  DAC_test_i |DAC_test |    29|
+|1     |top          |         |    59|
+|2     |  DAC_test_i |DAC_test |    55|
 +------+-------------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 748.816 ; gain = 185.586
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 748.816 ; gain = 455.805
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 760.688 ; gain = 167.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 760.688 ; gain = 454.586
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -302,11 +341,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-35 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+45 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:33 . Memory (MB): peak = 769.699 ; gain = 488.152
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 781.855 ; gain = 487.211
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/synth_1/DAC_test_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/synth_1/DAC_test_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file DAC_test_wrapper_utilization_synth.rpt -pb DAC_test_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 769.980 ; gain = 0.023
-INFO: [Common 17-206] Exiting Vivado at Wed Nov 14 09:05:19 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 782.086 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 15 15:26:10 2018...

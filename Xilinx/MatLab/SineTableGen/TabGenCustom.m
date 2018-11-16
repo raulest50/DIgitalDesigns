@@ -4,7 +4,7 @@ N = 12;% numero de bits
 sm = 100;% cantidad de muestras;
 
 t = linspace(0, 2*pi, sm+1);
-y = ((sin(t)+1)/2)*(655);
+y = round(((sin(t)+1)/2)*(655));
 
 %stairs(y);
 p= cell(sm, 1);

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Wed Nov 14 09:09:07 2018
-| Host             : 24GHZi7 running 64-bit major release  (build 9200)
+| Date             : Thu Nov 15 15:28:19 2018
+| Host             : LABPRYV-D128597 running 64-bit major release  (build 9200)
 | Command          : report_power -file DAC_test_wrapper_power_routed.rpt -pb DAC_test_wrapper_power_summary_routed.pb -rpx DAC_test_wrapper_power_routed.rpx
 | Design           : DAC_test_wrapper
 | Device           : xc7a35ticsg324-1L
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.193        |
+| Total On-Chip Power (W)  | 0.205        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.131        |
+| Dynamic (W)              | 0.143        |
 | Device Static (W)        | 0.062        |
 | Effective TJA (C/W)      | 4.8          |
-| Max Ambient (C)          | 99.1         |
-| Junction Temperature (C) | 25.9         |
+| Max Ambient (C)          | 99.0         |
+| Junction Temperature (C) | 26.0         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.003 |        9 |       --- |             --- |
-| Slice Logic    |    <0.001 |       94 |       --- |             --- |
-|   LUT as Logic |    <0.001 |       27 |     20800 |            0.13 |
-|   CARRY4       |    <0.001 |        8 |      8150 |            0.10 |
-|   Register     |    <0.001 |       33 |     41600 |            0.08 |
-|   Others       |     0.000 |       16 |       --- |             --- |
-| Signals        |    <0.001 |       78 |       --- |             --- |
+| Clocks         |     0.005 |        9 |       --- |             --- |
+| Slice Logic    |    <0.001 |      162 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       43 |     20800 |            0.21 |
+|   CARRY4       |    <0.001 |       18 |      8150 |            0.22 |
+|   Register     |    <0.001 |       59 |     41600 |            0.14 |
+|   Others       |     0.000 |       20 |       --- |             --- |
+| Signals        |     0.002 |      114 |       --- |             --- |
 | Block RAM      |    <0.001 |      0.5 |        50 |            1.00 |
 | PLL            |     0.123 |        1 |         5 |           20.00 |
-| I/O            |     0.004 |        3 |       210 |            1.43 |
+| I/O            |     0.012 |        5 |       210 |            2.38 |
 | Static Power   |     0.062 |          |           |                 |
-| Total          |     0.193 |          |           |                 |
+| Total          |     0.205 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       0.950 |     0.021 |       0.015 |      0.006 |
+| Vccint    |       0.950 |     0.026 |       0.019 |      0.006 |
 | Vccaux    |       1.800 |     0.074 |       0.063 |      0.011 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -146,10 +146,14 @@ Table of Contents
 +-----------------------------------------+-----------+
 | Name                                    | Power (W) |
 +-----------------------------------------+-----------+
-| DAC_test_wrapper                        |     0.131 |
-|   DAC_test_i                            |     0.127 |
+| DAC_test_wrapper                        |     0.143 |
+|   DAC_test_i                            |     0.131 |
 |     PWM_12b_0                           |     0.003 |
 |       U0                                |     0.003 |
+|     PWM_12b_1                           |     0.002 |
+|       U0                                |     0.002 |
+|     PWM_12b_2                           |     0.002 |
+|       U0                                |     0.002 |
 |     SineWave100s_0                      |    <0.001 |
 |       U0                                |    <0.001 |
 |     c_counter_binary_0                  |    <0.001 |
@@ -162,6 +166,8 @@ Table of Contents
 |                   i_q.i_simple.qreg     |    <0.001 |
 |     clk_wiz_0                           |     0.124 |
 |       inst                              |     0.124 |
+|     comp2s12b_0                         |     0.000 |
+|     descomp2s12b_0                      |     0.000 |
 |     xlconstant_0                        |     0.000 |
 +-----------------------------------------+-----------+
 

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Wed Nov 14 09:09:06 2018
-| Host         : 24GHZi7 running 64-bit major release  (build 9200)
+| Date         : Thu Nov 15 15:28:18 2018
+| Host         : LABPRYV-D128597 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file DAC_test_wrapper_methodology_drc_routed.rpt -pb DAC_test_wrapper_methodology_drc_routed.pb -rpx DAC_test_wrapper_methodology_drc_routed.rpx
 | Design       : DAC_test_wrapper
 | Device       : xc7a35ticsg324-1L
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 30
+             Violations found: 58
 +-----------+----------+-----------------------------------------+------------+
 | Rule      | Severity | Description                             | Violations |
 +-----------+----------+-----------------------------------------+------------+
 | TIMING-8  | Warning  | No common period between related clocks | 1          |
-| TIMING-16 | Warning  | Large setup violation                   | 29         |
+| TIMING-16 | Warning  | Large setup violation                   | 57         |
 +-----------+----------+-----------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -40,147 +40,287 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -10.620 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[0]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[0]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#2 Warning
 Large setup violation  
-There is a large setup violation of -10.620 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[2]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[1]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#3 Warning
 Large setup violation  
-There is a large setup violation of -10.620 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[3]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[2]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#4 Warning
 Large setup violation  
-There is a large setup violation of -10.620 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[5]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[3]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#5 Warning
 Large setup violation  
-There is a large setup violation of -10.620 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[6]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[4]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#6 Warning
 Large setup violation  
-There is a large setup violation of -10.755 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[7]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[5]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#7 Warning
 Large setup violation  
-There is a large setup violation of -10.859 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[1]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[6]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#8 Warning
 Large setup violation  
-There is a large setup violation of -10.859 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[4]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -10.569 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg[7]/R (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#9 Warning
 Large setup violation  
-There is a large setup violation of -11.221 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[4]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.274 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[10]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#10 Warning
 Large setup violation  
-There is a large setup violation of -11.221 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[5]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.274 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[11]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#11 Warning
 Large setup violation  
-There is a large setup violation of -11.221 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[6]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.274 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[8]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#12 Warning
 Large setup violation  
-There is a large setup violation of -11.221 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[7]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.274 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[9]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#13 Warning
 Large setup violation  
-There is a large setup violation of -11.247 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[5] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[0]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#14 Warning
 Large setup violation  
-There is a large setup violation of -11.267 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[7] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[1]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#15 Warning
 Large setup violation  
-There is a large setup violation of -11.350 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[9] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[2]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#16 Warning
 Large setup violation  
-There is a large setup violation of -11.351 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[0]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[3]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#17 Warning
 Large setup violation  
-There is a large setup violation of -11.351 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[1]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[4]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#18 Warning
 Large setup violation  
-There is a large setup violation of -11.351 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[2]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[5]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#19 Warning
 Large setup violation  
-There is a large setup violation of -11.351 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[3]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[6]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#20 Warning
 Large setup violation  
-There is a large setup violation of -11.360 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[10]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.322 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[7]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#21 Warning
 Large setup violation  
-There is a large setup violation of -11.360 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[11]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.393 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[9] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#22 Warning
 Large setup violation  
-There is a large setup violation of -11.360 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[8]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.400 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[0]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#23 Warning
 Large setup violation  
-There is a large setup violation of -11.360 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/count_reg[9]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.400 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[1]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#24 Warning
 Large setup violation  
-There is a large setup violation of -11.377 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[8] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.400 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[2]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#25 Warning
 Large setup violation  
-There is a large setup violation of -11.383 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[6] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.400 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[3]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#26 Warning
 Large setup violation  
-There is a large setup violation of -11.389 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[4] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.405 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[4]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#27 Warning
 Large setup violation  
-There is a large setup violation of -11.486 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[10] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.405 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[5]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#28 Warning
 Large setup violation  
-There is a large setup violation of -3.358 ns between DAC_test_i/PWM_12b_0/U0/PWM_reg/C (clocked by clk_out2_DAC_test_clk_wiz_0_0) and PWM_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.405 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[6]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-16#29 Warning
 Large setup violation  
-There is a large setup violation of -3.569 ns between DAC_test_i/SineWave100s_0/U0/count_reg_rep/CLKARDCLK (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/PWM_reg/D (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -11.405 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[7]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -11.507 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[10] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -11.507 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[7] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -11.524 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[4] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -11.545 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[10]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#34 Warning
+Large setup violation  
+There is a large setup violation of -11.545 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[11]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#35 Warning
+Large setup violation  
+There is a large setup violation of -11.545 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[8]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#36 Warning
+Large setup violation  
+There is a large setup violation of -11.545 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/count_reg[9]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#37 Warning
+Large setup violation  
+There is a large setup violation of -11.573 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[4]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#38 Warning
+Large setup violation  
+There is a large setup violation of -11.573 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[5]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#39 Warning
+Large setup violation  
+There is a large setup violation of -11.573 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[6]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#40 Warning
+Large setup violation  
+There is a large setup violation of -11.573 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[7]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#41 Warning
+Large setup violation  
+There is a large setup violation of -11.584 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[0]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#42 Warning
+Large setup violation  
+There is a large setup violation of -11.584 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[1]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#43 Warning
+Large setup violation  
+There is a large setup violation of -11.584 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[2]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#44 Warning
+Large setup violation  
+There is a large setup violation of -11.584 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[3]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#45 Warning
+Large setup violation  
+There is a large setup violation of -11.587 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[10]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#46 Warning
+Large setup violation  
+There is a large setup violation of -11.587 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[11]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#47 Warning
+Large setup violation  
+There is a large setup violation of -11.587 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[8]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#48 Warning
+Large setup violation  
+There is a large setup violation of -11.587 ns between resetn_0 (clocked by VIRTUAL_DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/count_reg[9]/R (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#49 Warning
+Large setup violation  
+There is a large setup violation of -11.646 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[5] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#50 Warning
+Large setup violation  
+There is a large setup violation of -11.650 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[6] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#51 Warning
+Large setup violation  
+There is a large setup violation of -11.653 ns between resetn_0 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0) and DAC_test_i/SineWave100s_0/U0/count_reg_rep/ADDRARDADDR[8] (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#52 Warning
+Large setup violation  
+There is a large setup violation of -3.741 ns between DAC_test_i/PWM_12b_1/U0/PWM_reg/C (clocked by clk_out2_DAC_test_clk_wiz_0_0) and PWM_Ca2 (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#53 Warning
+Large setup violation  
+There is a large setup violation of -3.919 ns between DAC_test_i/PWM_12b_2/U0/PWM_reg/C (clocked by clk_out2_DAC_test_clk_wiz_0_0) and Sine_recomp (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#54 Warning
+Large setup violation  
+There is a large setup violation of -3.983 ns between DAC_test_i/SineWave100s_0/U0/count_reg_rep/CLKARDCLK (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_1/U0/PWM_reg/D (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#55 Warning
+Large setup violation  
+There is a large setup violation of -4.090 ns between DAC_test_i/SineWave100s_0/U0/count_reg_rep/CLKARDCLK (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_2/U0/PWM_reg/D (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#56 Warning
+Large setup violation  
+There is a large setup violation of -4.312 ns between DAC_test_i/PWM_12b_0/U0/PWM_reg/C (clocked by clk_out2_DAC_test_clk_wiz_0_0) and Sine (clocked by VIRTUAL_clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#57 Warning
+Large setup violation  
+There is a large setup violation of -4.889 ns between DAC_test_i/SineWave100s_0/U0/count_reg_rep/CLKARDCLK (clocked by DAC_test_i/c_counter_binary_0/U0/i_synth/i_baseblox.i_baseblox_counter/THRESH0) and DAC_test_i/PWM_12b_0/U0/PWM_reg/D (clocked by clk_out2_DAC_test_clk_wiz_0_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 

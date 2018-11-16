@@ -21,4 +21,16 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_SineWa
 # IP: bd/DAC_test/ip/DAC_test_xlconstant_0_0/DAC_test_xlconstant_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_xlconstant_0_0 || ORIG_REF_NAME==DAC_test_xlconstant_0_0} -quiet] -quiet
 
+# IP: bd/DAC_test/ip/DAC_test_comp2s12b_0_0/DAC_test_comp2s12b_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_comp2s12b_0_0 || ORIG_REF_NAME==DAC_test_comp2s12b_0_0} -quiet] -quiet
+
+# IP: bd/DAC_test/ip/DAC_test_PWM_12b_0_1/DAC_test_PWM_12b_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_PWM_12b_0_1 || ORIG_REF_NAME==DAC_test_PWM_12b_0_1} -quiet] -quiet
+
+# IP: bd/DAC_test/ip/DAC_test_descomp2s12b_0_0/DAC_test_descomp2s12b_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_descomp2s12b_0_0 || ORIG_REF_NAME==DAC_test_descomp2s12b_0_0} -quiet] -quiet
+
+# IP: bd/DAC_test/ip/DAC_test_PWM_12b_1_0/DAC_test_PWM_12b_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DAC_test_PWM_12b_1_0 || ORIG_REF_NAME==DAC_test_PWM_12b_1_0} -quiet] -quiet
+
 # XDC: bd/DAC_test/DAC_test_ooc.xdc

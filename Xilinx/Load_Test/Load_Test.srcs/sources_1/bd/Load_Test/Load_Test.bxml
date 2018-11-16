@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="Load_Test" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1542297230"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1542297230"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1542297230"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1542297230"/>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1542325619"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1542325619"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1542325620"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1542325620"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\Load_Test_SineWave100s_0_0\Load_Test_SineWave100s_0_0.xci" Type="IP">
         <Instance HierarchyPath="SineWave100s_0"/>
@@ -25,14 +25,6 @@
       </File>
       <File Name="ip\Load_Test_c_counter_binary_0_0\Load_Test_c_counter_binary_0_0.xci" Type="IP">
         <Instance HierarchyPath="c_counter_binary_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip\Load_Test_comp2s12b_0_1\Load_Test_comp2s12b_0_1.xci" Type="IP">
-        <Instance HierarchyPath="comp2s12b_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

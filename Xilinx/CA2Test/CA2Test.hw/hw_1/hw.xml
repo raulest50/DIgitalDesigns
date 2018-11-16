@@ -9,7 +9,7 @@
     <Object name="xc7a35t_0" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value=""/>
       <Properties Property="PROBES.FILE" value=""/>
-      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/$_project_name__wrapper.bit"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="C:/RaulEsteban/DIgitalDesigns/Xilinx/DAC_test/DAC_test.runs/impl_1/DAC_test_wrapper.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
   </ObjectList>

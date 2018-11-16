@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Thu Nov 15 10:53:49 2018
+--Date        : Thu Nov 15 18:46:59 2018
 --Host        : LABPRYV-D128597 running 64-bit major release  (build 9200)
 --Command     : generate_target Load_Test_wrapper.bd
 --Design      : Load_Test_wrapper

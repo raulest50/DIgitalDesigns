@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
---Date        : Thu Nov 15 10:53:49 2018
+--Date        : Thu Nov 15 18:46:59 2018
 --Host        : LABPRYV-D128597 running 64-bit major release  (build 9200)
 --Command     : generate_target Load_Test.bd
 --Design      : Load_Test
@@ -19,7 +19,7 @@ entity Load_Test is
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of Load_Test : entity is "Load_Test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Load_Test,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=14,numReposBlks=14,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of Load_Test : entity is "Load_Test,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=Load_Test,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=13,numReposBlks=13,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=5,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of Load_Test : entity is "Load_Test.hwdef";
 end Load_Test;
@@ -42,12 +42,6 @@ architecture STRUCTURE of Load_Test is
     Q : out STD_LOGIC_VECTOR ( 10 downto 0 )
   );
   end component Load_Test_c_counter_binary_0_0;
-  component Load_Test_comp2s12b_0_1 is
-  port (
-    uint12 : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    int12 : out STD_LOGIC_VECTOR ( 11 downto 0 )
-  );
-  end component Load_Test_comp2s12b_0_1;
   component Load_Test_xlconcat_0_0 is
   port (
     In0 : in STD_LOGIC_VECTOR ( 11 downto 0 );
@@ -101,14 +95,6 @@ architecture STRUCTURE of Load_Test is
     Res : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component Load_Test_util_vector_logic_0_0;
-  component Load_Test_SineWave100s_0_0 is
-  port (
-    clk : in STD_LOGIC;
-    resetn : in STD_LOGIC;
-    enable : in STD_LOGIC;
-    sinw : out STD_LOGIC_VECTOR ( 11 downto 0 )
-  );
-  end component Load_Test_SineWave100s_0_0;
   component Load_Test_PWM_12b_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -127,6 +113,14 @@ architecture STRUCTURE of Load_Test is
     PWM : out STD_LOGIC
   );
   end component Load_Test_PWM_12b_0_1;
+  component Load_Test_SineWave100s_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    resetn : in STD_LOGIC;
+    enable : in STD_LOGIC;
+    sinw : out STD_LOGIC_VECTOR ( 11 downto 0 )
+  );
+  end component Load_Test_SineWave100s_0_0;
   signal ModeloCarga_0_Hzout : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal PWM_12b_0_PWM : STD_LOGIC;
   signal PWM_12b_1_PWM : STD_LOGIC;
@@ -135,7 +129,6 @@ architecture STRUCTURE of Load_Test is
   signal c_counter_binary_0_THRESH0 : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal clk_wiz_0_clk_out2 : STD_LOGIC;
-  signal comp2s12b_0_int12 : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal descomp2s12b_0_uint12 : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal reset_1 : STD_LOGIC;
   signal sys_clock_1 : STD_LOGIC;
@@ -213,11 +206,6 @@ clk_wiz_0: component Load_Test_clk_wiz_0_0
       locked => NLW_clk_wiz_0_locked_UNCONNECTED,
       resetn => reset_1
     );
-comp2s12b_0: component Load_Test_comp2s12b_0_1
-     port map (
-      int12(11 downto 0) => comp2s12b_0_int12(11 downto 0),
-      uint12(11 downto 0) => SineWave100s_0_sinw(11 downto 0)
-    );
 conts_1logico: component Load_Test_xlconstant_1_0
      port map (
       dout(0) => xlconstant_1_dout(0)
@@ -234,7 +222,7 @@ util_vector_logic_0: component Load_Test_util_vector_logic_0_0
     );
 xlconcat_0: component Load_Test_xlconcat_0_0
      port map (
-      In0(11 downto 0) => comp2s12b_0_int12(11 downto 0),
+      In0(11 downto 0) => SineWave100s_0_sinw(11 downto 0),
       In1(3 downto 0) => xlconstant_0_dout(3 downto 0),
       dout(15 downto 0) => xlconcat_0_dout(15 downto 0)
     );

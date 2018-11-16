@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Nov 14 09:03:25 2018" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 15 14:39:50 2018" VIVADOVERSION="2018.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:arty:part0:1.1" DEVICE="7a35ti" NAME="DAC_test" PACKAGE="csg324" SPEEDGRADE="-1L"/>
 
@@ -12,13 +12,25 @@
     <PORT DIR="I" NAME="resetn_0" SIGIS="rst" SIGNAME="External_Ports_resetn_0">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
+        <CONNECTION INSTANCE="PWM_12b_1" PORT="nreset"/>
+        <CONNECTION INSTANCE="PWM_12b_2" PORT="nreset"/>
         <CONNECTION INSTANCE="PWM_12b_0" PORT="nreset"/>
         <CONNECTION INSTANCE="SineWave100s_0" PORT="nreset"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="O" NAME="PWM_0" SIGIS="undef" SIGNAME="PWM_12b_0_PWM">
+    <PORT DIR="O" NAME="Sine" SIGIS="undef" SIGNAME="PWM_12b_0_PWM">
       <CONNECTIONS>
         <CONNECTION INSTANCE="PWM_12b_0" PORT="PWM"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PWM_Ca2" SIGIS="undef" SIGNAME="PWM_12b_1_PWM">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PWM_12b_1" PORT="PWM"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="Sine_recomp" SIGIS="undef" SIGNAME="PWM_12b_2_PWM">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PWM_12b_2" PORT="PWM"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -55,7 +67,77 @@
         </PORT>
         <PORT DIR="O" NAME="PWM" SIGIS="undef" SIGNAME="PWM_12b_0_PWM">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="PWM_0"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="Sine"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PWM_12b_1" HWVERSION="1.0" INSTANCE="PWM_12b_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM_12b" VLNV="xilinx.com:module_ref:PWM_12b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DAC_test_PWM_12b_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="433333333" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="comp2s12b_0_int12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comp2s12b_0" PORT="int12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nreset" SIGIS="undef" SIGNAME="External_Ports_resetn_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM" SIGIS="undef" SIGNAME="PWM_12b_1_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PWM_Ca2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PWM_12b_2" HWVERSION="1.0" INSTANCE="PWM_12b_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PWM_12b" VLNV="xilinx.com:module_ref:PWM_12b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DAC_test_PWM_12b_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="433333333" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_0" PORT="clk_out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="D" RIGHT="0" SIGIS="undef" SIGNAME="descomp2s12b_0_uint12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="descomp2s12b_0" PORT="uint12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="nreset" SIGIS="undef" SIGNAME="External_Ports_resetn_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="resetn_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="enable" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PWM" SIGIS="undef" SIGNAME="PWM_12b_2_PWM">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Sine_recomp"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -86,6 +168,7 @@
         <PORT DIR="O" LEFT="11" NAME="sinw" RIGHT="0" SIGIS="undef" SIGNAME="SineWave100s_0_sinw">
           <CONNECTIONS>
             <CONNECTION INSTANCE="PWM_12b_0" PORT="D"/>
+            <CONNECTION INSTANCE="comp2s12b_0" PORT="uint12"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -745,10 +828,53 @@
         </PORT>
         <PORT CLKFREQUENCY="433333333" DIR="O" NAME="clk_out2" SIGIS="clk" SIGNAME="clk_wiz_0_clk_out2">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_12b_1" PORT="clk"/>
+            <CONNECTION INSTANCE="PWM_12b_2" PORT="clk"/>
             <CONNECTION INSTANCE="PWM_12b_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="locked" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/comp2s12b_0" HWVERSION="1.0" INSTANCE="comp2s12b_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comp2s12b" VLNV="xilinx.com:module_ref:comp2s12b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DAC_test_comp2s12b_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="11" NAME="uint12" RIGHT="0" SIGIS="undef" SIGNAME="SineWave100s_0_sinw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="SineWave100s_0" PORT="sinw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="int12" RIGHT="0" SIGIS="undef" SIGNAME="comp2s12b_0_int12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_12b_1" PORT="D"/>
+            <CONNECTION INSTANCE="descomp2s12b_0" PORT="sint12"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/descomp2s12b_0" HWVERSION="1.0" INSTANCE="descomp2s12b_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="descomp2s12b" VLNV="xilinx.com:module_ref:descomp2s12b:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DAC_test_descomp2s12b_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="11" NAME="sint12" RIGHT="0" SIGIS="undef" SIGNAME="comp2s12b_0_int12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comp2s12b_0" PORT="int12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="uint12" RIGHT="0" SIGIS="undef" SIGNAME="descomp2s12b_0_uint12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PWM_12b_2" PORT="D"/>
+          </CONNECTIONS>
+        </PORT>
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
@@ -763,8 +889,10 @@
       <PORTS>
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="SineWave100s_0" PORT="enable"/>
+            <CONNECTION INSTANCE="PWM_12b_1" PORT="enable"/>
+            <CONNECTION INSTANCE="PWM_12b_2" PORT="enable"/>
             <CONNECTION INSTANCE="PWM_12b_0" PORT="enable"/>
+            <CONNECTION INSTANCE="SineWave100s_0" PORT="enable"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

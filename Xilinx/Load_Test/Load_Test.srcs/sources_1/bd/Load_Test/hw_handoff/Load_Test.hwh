@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 15 10:53:50 2018" VIVADOVERSION="2018.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Nov 15 18:47:00 2018" VIVADOVERSION="2018.2">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:arty:part0:1.1" DEVICE="7a35ti" NAME="Load_Test" PACKAGE="csg324" SPEEDGRADE="-1L"/>
 
@@ -165,8 +165,8 @@
         </PORT>
         <PORT DIR="O" LEFT="11" NAME="sinw" RIGHT="0" SIGIS="undef" SIGNAME="SineWave100s_0_sinw">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comp2s12b_0" PORT="uint12"/>
             <CONNECTION INSTANCE="PWM_12b_0" PORT="D"/>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -185,7 +185,7 @@
         <PARAMETER NAME="C_HAS_SCLR" VALUE="1"/>
         <PARAMETER NAME="C_RESTRICT_COUNT" VALUE="1"/>
         <PARAMETER NAME="C_COUNT_TO" VALUE="10011100010000"/>
-        <PARAMETER NAME="C_COUNT_BY" VALUE="10011100010000"/>
+        <PARAMETER NAME="C_COUNT_BY" VALUE="1"/>
         <PARAMETER NAME="C_COUNT_MODE" VALUE="0"/>
         <PARAMETER NAME="C_THRESH0_VALUE" VALUE="10011100010000"/>
         <PARAMETER NAME="C_CE_OVERRIDES_SYNC" VALUE="0"/>
@@ -202,7 +202,7 @@
         <PARAMETER NAME="Component_Name" VALUE="Load_Test_c_counter_binary_0_1"/>
         <PARAMETER NAME="Implementation" VALUE="Fabric"/>
         <PARAMETER NAME="Output_Width" VALUE="14"/>
-        <PARAMETER NAME="Increment_Value" VALUE="2710"/>
+        <PARAMETER NAME="Increment_Value" VALUE="1"/>
         <PARAMETER NAME="Restrict_Count" VALUE="true"/>
         <PARAMETER NAME="Final_Count_Value" VALUE="2710"/>
         <PARAMETER NAME="Count_Mode" VALUE="UP"/>
@@ -257,7 +257,7 @@
         <PARAMETER NAME="C_HAS_SCLR" VALUE="1"/>
         <PARAMETER NAME="C_RESTRICT_COUNT" VALUE="1"/>
         <PARAMETER NAME="C_COUNT_TO" VALUE="11111010000"/>
-        <PARAMETER NAME="C_COUNT_BY" VALUE="11111010000"/>
+        <PARAMETER NAME="C_COUNT_BY" VALUE="1"/>
         <PARAMETER NAME="C_COUNT_MODE" VALUE="0"/>
         <PARAMETER NAME="C_THRESH0_VALUE" VALUE="11111010000"/>
         <PARAMETER NAME="C_CE_OVERRIDES_SYNC" VALUE="0"/>
@@ -274,7 +274,7 @@
         <PARAMETER NAME="Component_Name" VALUE="Load_Test_c_counter_binary_0_0"/>
         <PARAMETER NAME="Implementation" VALUE="Fabric"/>
         <PARAMETER NAME="Output_Width" VALUE="11"/>
-        <PARAMETER NAME="Increment_Value" VALUE="7D0"/>
+        <PARAMETER NAME="Increment_Value" VALUE="1"/>
         <PARAMETER NAME="Restrict_Count" VALUE="true"/>
         <PARAMETER NAME="Final_Count_Value" VALUE="7D0"/>
         <PARAMETER NAME="Count_Mode" VALUE="UP"/>
@@ -911,26 +911,6 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE FULLNAME="/comp2s12b_0" HWVERSION="1.0" INSTANCE="comp2s12b_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="comp2s12b" VLNV="xilinx.com:module_ref:comp2s12b:1.0">
-      <DOCUMENTS/>
-      <PARAMETERS>
-        <PARAMETER NAME="Component_Name" VALUE="Load_Test_comp2s12b_0_1"/>
-        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
-      </PARAMETERS>
-      <PORTS>
-        <PORT DIR="I" LEFT="11" NAME="uint12" RIGHT="0" SIGIS="undef" SIGNAME="SineWave100s_0_sinw">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="SineWave100s_0" PORT="sinw"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="11" NAME="int12" RIGHT="0" SIGIS="undef" SIGNAME="comp2s12b_0_int12">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
-          </CONNECTIONS>
-        </PORT>
-      </PORTS>
-      <BUSINTERFACES/>
-    </MODULE>
     <MODULE FULLNAME="/conts_1logico" HWVERSION="1.1" INSTANCE="conts_1logico" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
       <DOCUMENTS/>
       <PARAMETERS>
@@ -943,9 +923,9 @@
         <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="conts_1logico_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ModeloCarga_0" PORT="clk_enable"/>
-            <CONNECTION INSTANCE="SineWave100s_0" PORT="enable"/>
             <CONNECTION INSTANCE="PWM_12b_0" PORT="enable"/>
             <CONNECTION INSTANCE="PWM_12b_1" PORT="enable"/>
+            <CONNECTION INSTANCE="SineWave100s_0" PORT="enable"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1036,9 +1016,9 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="11" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="comp2s12b_0_int12">
+        <PORT DIR="I" LEFT="11" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="SineWave100s_0_sinw">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comp2s12b_0" PORT="int12"/>
+            <CONNECTION INSTANCE="SineWave100s_0" PORT="sinw"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">

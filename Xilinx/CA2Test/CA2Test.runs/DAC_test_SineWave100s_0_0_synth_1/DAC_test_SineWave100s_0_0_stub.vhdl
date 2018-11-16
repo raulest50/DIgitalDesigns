@@ -1,8 +1,8 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Mon Nov 12 22:38:24 2018
--- Host        : 24GHZi7 running 64-bit major release  (build 9200)
+-- Date        : Thu Nov 15 14:40:53 2018
+-- Host        : LABPRYV-D128597 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ DAC_test_SineWave100s_0_0_stub.vhdl
 -- Design      : DAC_test_SineWave100s_0_0

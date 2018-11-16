@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# ModeloCarga, PWM_12b, PWM_12b, SineWave100s, comp2s12b, descomp2s12b
+# ModeloCarga, PWM_12b, PWM_12b, SineWave100s, descomp2s12b
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -225,7 +225,7 @@ proc create_root_design { parentCell } {
   set bin_counter_load_clock [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 bin_counter_load_clock ]
   set_property -dict [ list \
    CONFIG.Final_Count_Value {2710} \
-   CONFIG.Increment_Value {2710} \
+   CONFIG.Increment_Value {1} \
    CONFIG.Output_Width {14} \
    CONFIG.Restrict_Count {true} \
    CONFIG.SCLR {true} \
@@ -237,7 +237,7 @@ proc create_root_design { parentCell } {
   set c_counter_binary_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:c_counter_binary:12.0 c_counter_binary_0 ]
   set_property -dict [ list \
    CONFIG.Final_Count_Value {7D0} \
-   CONFIG.Increment_Value {7D0} \
+   CONFIG.Increment_Value {1} \
    CONFIG.Output_Width {11} \
    CONFIG.Restrict_Count {true} \
    CONFIG.SCLR {true} \
@@ -279,17 +279,6 @@ proc create_root_design { parentCell } {
    CONFIG.USE_SAFE_CLOCK_STARTUP {true} \
  ] $clk_wiz_0
 
-  # Create instance: comp2s12b_0, and set properties
-  set block_name comp2s12b
-  set block_cell_name comp2s12b_0
-  if { [catch {set comp2s12b_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
-     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   } elseif { $comp2s12b_0 eq "" } {
-     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
-     return 1
-   }
-  
   # Create instance: conts_1logico, and set properties
   set conts_1logico [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 conts_1logico ]
 
@@ -339,12 +328,11 @@ proc create_root_design { parentCell } {
   connect_bd_net -net ModeloCarga_0_Hzout [get_bd_pins ModeloCarga_0/Hzout] [get_bd_pins xlslice_0/Din]
   connect_bd_net -net PWM_12b_0_PWM [get_bd_ports PWM_sine_current] [get_bd_pins PWM_12b_0/PWM]
   connect_bd_net -net PWM_12b_1_PWM [get_bd_ports PWM_Load_Voltage] [get_bd_pins PWM_12b_1/PWM]
-  connect_bd_net -net SineWave100s_0_sinw [get_bd_pins PWM_12b_0/D] [get_bd_pins SineWave100s_0/sinw] [get_bd_pins comp2s12b_0/uint12]
+  connect_bd_net -net SineWave100s_0_sinw [get_bd_pins PWM_12b_0/D] [get_bd_pins SineWave100s_0/sinw] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net bin_counter_load_clock_THRESH0 [get_bd_pins ModeloCarga_0/clk] [get_bd_pins bin_counter_load_clock/THRESH0]
   connect_bd_net -net c_counter_binary_0_THRESH0 [get_bd_pins SineWave100s_0/clk] [get_bd_pins c_counter_binary_0/THRESH0]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins clk_wiz_0/clk_out1]
   connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins PWM_12b_0/clk] [get_bd_pins PWM_12b_1/clk] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net comp2s12b_0_int12 [get_bd_pins comp2s12b_0/int12] [get_bd_pins xlconcat_0/In0]
   connect_bd_net -net descomp2s12b_0_uint12 [get_bd_pins PWM_12b_1/D] [get_bd_pins descomp2s12b_0/uint12]
   connect_bd_net -net reset_1 [get_bd_ports reset] [get_bd_pins ModeloCarga_0/resetn] [get_bd_pins PWM_12b_0/resetn] [get_bd_pins PWM_12b_1/resetn] [get_bd_pins SineWave100s_0/resetn] [get_bd_pins clk_wiz_0/resetn] [get_bd_pins util_vector_logic_0/Op1]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins bin_counter_load_clock/CLK] [get_bd_pins clk_wiz_0/clk_in1]

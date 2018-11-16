@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# PWM_12b, SineWave100s
+# PWM_12b, PWM_12b, PWM_12b, SineWave100s, comp2s12b, descomp2s12b
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -165,7 +165,9 @@ proc create_root_design { parentCell } {
   # Create interface ports
 
   # Create ports
-  set PWM_0 [ create_bd_port -dir O PWM_0 ]
+  set PWM_Ca2 [ create_bd_port -dir O PWM_Ca2 ]
+  set Sine [ create_bd_port -dir O Sine ]
+  set Sine_recomp [ create_bd_port -dir O Sine_recomp ]
   set resetn_0 [ create_bd_port -dir I -type rst resetn_0 ]
   set sys_clock [ create_bd_port -dir I -type clk sys_clock ]
   set_property -dict [ list \
@@ -180,6 +182,28 @@ proc create_root_design { parentCell } {
      catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    } elseif { $PWM_12b_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: PWM_12b_1, and set properties
+  set block_name PWM_12b
+  set block_cell_name PWM_12b_1
+  if { [catch {set PWM_12b_1 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $PWM_12b_1 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: PWM_12b_2, and set properties
+  set block_name PWM_12b
+  set block_cell_name PWM_12b_2
+  if { [catch {set PWM_12b_2 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $PWM_12b_2 eq "" } {
      catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
      return 1
    }
@@ -235,18 +259,44 @@ proc create_root_design { parentCell } {
    CONFIG.USE_BOARD_FLOW {true} \
  ] $clk_wiz_0
 
+  # Create instance: comp2s12b_0, and set properties
+  set block_name comp2s12b
+  set block_cell_name comp2s12b_0
+  if { [catch {set comp2s12b_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $comp2s12b_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: descomp2s12b_0, and set properties
+  set block_name descomp2s12b
+  set block_cell_name descomp2s12b_0
+  if { [catch {set descomp2s12b_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_msg_id "BD_TCL-105" "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $descomp2s12b_0 eq "" } {
+     catch {common::send_msg_id "BD_TCL-106" "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
 
   # Create port connections
-  connect_bd_net -net PWM_12b_0_PWM [get_bd_ports PWM_0] [get_bd_pins PWM_12b_0/PWM]
-  connect_bd_net -net SineWave100s_0_sinw [get_bd_pins PWM_12b_0/D] [get_bd_pins SineWave100s_0/sinw]
+  connect_bd_net -net PWM_12b_0_PWM [get_bd_ports Sine] [get_bd_pins PWM_12b_0/PWM]
+  connect_bd_net -net PWM_12b_1_PWM [get_bd_ports PWM_Ca2] [get_bd_pins PWM_12b_1/PWM]
+  connect_bd_net -net PWM_12b_2_PWM [get_bd_ports Sine_recomp] [get_bd_pins PWM_12b_2/PWM]
+  connect_bd_net -net SineWave100s_0_sinw [get_bd_pins PWM_12b_0/D] [get_bd_pins SineWave100s_0/sinw] [get_bd_pins comp2s12b_0/uint12]
   connect_bd_net -net c_counter_binary_0_THRESH0 [get_bd_pins SineWave100s_0/clk] [get_bd_pins c_counter_binary_0/THRESH0]
   connect_bd_net -net clk_wiz_0_clk_out1 [get_bd_pins c_counter_binary_0/CLK] [get_bd_pins clk_wiz_0/clk_out1]
-  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins PWM_12b_0/clk] [get_bd_pins clk_wiz_0/clk_out2]
-  connect_bd_net -net resetn_0_1 [get_bd_ports resetn_0] [get_bd_pins PWM_12b_0/nreset] [get_bd_pins SineWave100s_0/nreset] [get_bd_pins clk_wiz_0/resetn]
+  connect_bd_net -net clk_wiz_0_clk_out2 [get_bd_pins PWM_12b_0/clk] [get_bd_pins PWM_12b_1/clk] [get_bd_pins PWM_12b_2/clk] [get_bd_pins clk_wiz_0/clk_out2]
+  connect_bd_net -net comp2s12b_0_int12 [get_bd_pins PWM_12b_1/D] [get_bd_pins comp2s12b_0/int12] [get_bd_pins descomp2s12b_0/sint12]
+  connect_bd_net -net descomp2s12b_0_uint12 [get_bd_pins PWM_12b_2/D] [get_bd_pins descomp2s12b_0/uint12]
+  connect_bd_net -net resetn_0_1 [get_bd_ports resetn_0] [get_bd_pins PWM_12b_0/nreset] [get_bd_pins PWM_12b_1/nreset] [get_bd_pins PWM_12b_2/nreset] [get_bd_pins SineWave100s_0/nreset] [get_bd_pins clk_wiz_0/resetn]
   connect_bd_net -net sys_clock_1 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
-  connect_bd_net -net xlconstant_0_dout [get_bd_pins PWM_12b_0/enable] [get_bd_pins SineWave100s_0/enable] [get_bd_pins xlconstant_0/dout]
+  connect_bd_net -net xlconstant_0_dout [get_bd_pins PWM_12b_0/enable] [get_bd_pins PWM_12b_1/enable] [get_bd_pins PWM_12b_2/enable] [get_bd_pins SineWave100s_0/enable] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
 

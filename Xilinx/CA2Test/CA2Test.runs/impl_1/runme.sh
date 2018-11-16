@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.runs/impl_1'
+HD_PWD='C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

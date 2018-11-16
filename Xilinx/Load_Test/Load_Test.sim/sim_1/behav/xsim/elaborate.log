@@ -1,0 +1,127 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 73c35e97b56d4eadb2ee7390d81dff43 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_9 -L c_reg_fd_v12_0_5 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_5 -L xbip_dsp48_addsub_v3_0_5 -L xbip_addsub_v3_0_5 -L c_addsub_v12_0_12 -L c_gate_bit_v12_0_5 -L xbip_counter_v3_0_5 -L c_counter_binary_v12_0_12 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Load_Test_wrapper_behav xil_defaultlib.Load_Test_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_textio
+Compiling package c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_viv_co...
+Compiling package xbip_utils_v3_0_9.xbip_utils_v3_0_9_pkg
+Compiling package xbip_counter_v3_0_5.xbip_counter_v3_0_5_viv_comp
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_counter_v3_0_5.xbip_counter_v3_0_5_pkg
+Compiling package c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_pkg
+Compiling package c_addsub_v12_0_12.c_addsub_v12_0_12_pkg_legacy
+Compiling package c_reg_fd_v12_0_5.c_reg_fd_v12_0_5_viv_comp
+Compiling package c_addsub_v12_0_12.c_addsub_v12_0_12_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,alumodereg=0...]
+Compiling architecture carry4_v of entity unisim.CARRY4 [carry4_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1001")(0,3)\]
+Compiling architecture lut1_v of entity unisim.LUT1 [\LUT1(init="0001")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="11101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0110100110010110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001101001")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10001110")(0,7)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101000000101110001...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001011001100110")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1000011101111000")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0110")(0,3)\]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110111010001110...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="10010110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11101011101111101000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10111110001010000010...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01101001011010010110...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01101001100101101001...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110011010010110...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11100001100001111000...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00101000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111100010000111")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01110001")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111000000000111")(0...]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00001001")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000111011110000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10010110001111000011...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10010110100101100110...]
+Compiling architecture fdce_v of entity unisim.FDCE [fdce_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_ModeloCarga_0_2_ModeloCarga [load_test_modelocarga_0_2_modelo...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_ModeloCarga_0_2 [load_test_modelocarga_0_2_defaul...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0010111100000010")(0...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1001000000001001")(0...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0010")(0,3)\]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_PWM_12b_0_0_PWM_12b [load_test_pwm_12b_0_0_pwm_12b_de...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_PWM_12b_0_0 [load_test_pwm_12b_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_PWM_12b_0_1_PWM_12b [load_test_pwm_12b_0_1_pwm_12b_de...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_PWM_12b_0_1 [load_test_pwm_12b_0_1_default]
+Compiling architecture gnd_v of entity unisim.GND [gnd_default]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="01111000")(0,7)\]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0111111110000000")(0...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="01111111111111111000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="01111111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11110111111111111111...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10101010101000101010...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111111111111111...]
+Compiling architecture rb18_internal_vhdl_v of entity unisim.RB18_INTERNAL_VHDL [\RB18_INTERNAL_VHDL(bram_size=18...]
+Compiling architecture ramb18e1_v of entity unisim.RAMB18E1 [\RAMB18E1(doa_reg=1,init_00="000...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1110")(0,3)\]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0111")(0,3)\]
+Compiling architecture lut3_v of entity unisim.LUT3 [\LUT3(init="00000110")(0,7)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="00000000000000000000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000110...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="0000000001101010")(0...]
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="0001")(0,3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="10000000000000000000...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_SineWave100s_0_0_SineWave100s [load_test_sinewave100s_0_0_sinew...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_SineWave100s_0_0 [load_test_sinewave100s_0_0_defau...]
+Compiling architecture structural of entity c_reg_fd_v12_0_5.c_reg_fd_v12_0_5_viv [\c_reg_fd_v12_0_5_viv(c_width=14...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture rtl of entity c_addsub_v12_0_12.c_addsub_v12_0_12_lut6_legacy [\c_addsub_v12_0_12_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_12.c_addsub_v12_0_12_fabric_legacy [\c_addsub_v12_0_12_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_12.c_addsub_v12_0_12_legacy [\c_addsub_v12_0_12_legacy(c_fami...]
+Compiling architecture synth of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_legacy [\c_counter_binary_v12_0_12_legac...]
+Compiling architecture synth of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_viv [\c_counter_binary_v12_0_12_viv(c...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12 [\c_counter_binary_v12_0_12(c_xde...]
+Compiling architecture load_test_c_counter_binary_0_1_arch of entity xil_defaultlib.Load_Test_c_counter_binary_0_1 [load_test_c_counter_binary_0_1_d...]
+Compiling architecture structural of entity c_reg_fd_v12_0_5.c_reg_fd_v12_0_5_viv [\c_reg_fd_v12_0_5_viv(c_width=11...]
+Compiling architecture rtl of entity c_addsub_v12_0_12.c_addsub_v12_0_12_lut6_legacy [\c_addsub_v12_0_12_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_12.c_addsub_v12_0_12_fabric_legacy [\c_addsub_v12_0_12_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_12.c_addsub_v12_0_12_legacy [\c_addsub_v12_0_12_legacy(c_fami...]
+Compiling architecture synth of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_legacy [\c_counter_binary_v12_0_12_legac...]
+Compiling architecture synth of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12_viv [\c_counter_binary_v12_0_12_viv(c...]
+Compiling architecture xilinx of entity c_counter_binary_v12_0_12.c_counter_binary_v12_0_12 [\c_counter_binary_v12_0_12(c_xde...]
+Compiling architecture load_test_c_counter_binary_0_0_arch of entity xil_defaultlib.Load_Test_c_counter_binary_0_0 [load_test_c_counter_binary_0_0_d...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9)(1,1)(1,4)(1,7)\]
+Compiling architecture bufgctrl_v of entity unisim.BUFGCTRL [\BUFGCTRL(preselect_i0=true)\]
+Compiling architecture bufh_v of entity unisim.BUFH [bufh_default]
+Compiling architecture plle2_adv_v of entity unisim.PLLE2_ADV [\PLLE2_ADV(clkfbout_mult=13,clki...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_clk_wiz_0_0_Load_Test_clk_wiz_0_0_clk_wiz [load_test_clk_wiz_0_0_load_test_...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_clk_wiz_0_0 [load_test_clk_wiz_0_0_default]
+Compiling architecture vcc_v of entity unisim.VCC [vcc_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_xlconstant_1_0 [load_test_xlconstant_1_0_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_descomp2s12b_0_0 [load_test_descomp2s12b_0_0_defau...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_util_vector_logic_0_0 [load_test_util_vector_logic_0_0_...]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_xlconcat_0_0 [load_test_xlconcat_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_xlconstant_0_0 [load_test_xlconstant_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test_xlslice_0_0 [load_test_xlslice_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.Load_Test [load_test_default]
+Compiling architecture structure of entity xil_defaultlib.load_test_wrapper
+Built simulation snapshot Load_Test_wrapper_behav

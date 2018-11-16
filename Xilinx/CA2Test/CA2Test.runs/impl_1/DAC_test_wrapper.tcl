@@ -60,13 +60,17 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+  set_param synth.incrementalSynthesisCache C:/Users/cmparedes/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11372-LABPRYV-D128597/incrSyn
+  set_param xicom.use_bs_reader 1
   open_checkpoint DAC_test_wrapper_routed.dcp
-  set_property webtalk.parent_dir C:/Users/erich/Documents/Digital_Designs/Xilinx/DAC_test/DAC_test.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/RaulEsteban/DIgitalDesigns/Xilinx/CA2Test/CA2Test.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force DAC_test_wrapper.mmi }
   write_bitstream -force DAC_test_wrapper.bit 

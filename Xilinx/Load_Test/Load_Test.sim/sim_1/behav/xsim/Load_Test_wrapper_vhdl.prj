@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Load_Test.srcs/sources_1/imports/Xilinx/Tab_sin_100/Tab_sin_100.srcs/sources_1/imports/new/SineWave100s.vhd" \
+"../../../../Load_Test.srcs/sources_1/imports/Xilinx/PWM_gen/PWM_gen.srcs/sources_1/imports/new/PWM_12b.vhd" \
+"../../../../Load_Test.srcs/sources_1/imports/ModeloCarga/descomp2s12b.vhd" \
+"../../../../Load_Test.srcs/sources_1/imports/ModeloCarga/ModeloCarga.vhd" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_clk_wiz_0_0/Load_Test_clk_wiz_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_c_counter_binary_0_0/sim/Load_Test_c_counter_binary_0_0.vhd" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_xlconcat_0_0/Load_Test_xlconcat_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_xlconstant_0_0/Load_Test_xlconstant_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_0/Load_Test_PWM_12b_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_descomp2s12b_0_0/Load_Test_descomp2s12b_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_PWM_12b_0_1/Load_Test_PWM_12b_0_1_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_xlslice_0_0/Load_Test_xlslice_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_xlconstant_1_0/Load_Test_xlconstant_1_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_c_counter_binary_0_1/sim/Load_Test_c_counter_binary_0_1.vhd" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_ModeloCarga_0_2/Load_Test_ModeloCarga_0_2_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/sim/Load_Test.vhd" \
+"../../../../Load_Test.srcs/sources_1/bd/Load_Test/ip/Load_Test_util_vector_logic_0_0/Load_Test_util_vector_logic_0_0_sim_netlist.vhdl" \
+"../../../../Load_Test.srcs/sources_1/imports/hdl/Load_Test_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
