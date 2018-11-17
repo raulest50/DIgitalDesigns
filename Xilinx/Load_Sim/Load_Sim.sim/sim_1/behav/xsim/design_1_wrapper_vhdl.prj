@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Load_Sim.srcs/sources_1/imports/new/SineWave100s.vhd" \
+"../../../../Load_Sim.srcs/sources_1/imports/carga_HDLGEN/cargaModel.vhd" \
+"../../../../Load_Sim.ip_user_files/bd/design_1/ip/design_1_c_counter_binary_0_0/sim/design_1_c_counter_binary_0_0.vhd" \
+"../../../../Load_Sim.ip_user_files/bd/design_1/ip/design_1_c_addsub_0_0/sim/design_1_c_addsub_0_0.vhd" \
+"../../../../Load_Sim.ip_user_files/bd/design_1/ip/design_1_Contador_12Mhz_6khz_0/sim/design_1_Contador_12Mhz_6khz_0.vhd" \
+
+# Do not sort compile order
+nosort
