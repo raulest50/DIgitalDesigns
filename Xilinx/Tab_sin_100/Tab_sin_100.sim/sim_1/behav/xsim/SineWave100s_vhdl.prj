@@ -1,6 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../../sine_wave_generator/sine_wave_generator.srcs/sources_1/new/SineWave100s.vhd" \
-
-# Do not sort compile order
-nosort

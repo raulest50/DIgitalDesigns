@@ -1,0 +1,24 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace port PWM_Voltage -pg 1 -y 200 -defaultsOSRD
+preplace port resetn -pg 1 -y 200 -defaultsOSRD
+preplace port sys_clock -pg 1 -y 220 -defaultsOSRD
+preplace port PWM_current -pg 1 -y 180 -defaultsOSRD
+preplace inst c_counter_binary_0 -pg 1 -lvl 2 -y 70 -defaultsOSRD
+preplace inst c_counter_binary_1 -pg 1 -lvl 2 -y 190 -defaultsOSRD
+preplace inst VielEntity_0 -pg 1 -lvl 3 -y 190 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y 270 -defaultsOSRD
+preplace netloc c_counter_binary_1_THRESH0 1 2 1 NJ
+preplace netloc VielEntity_0_PWM_current 1 3 1 NJ
+preplace netloc sys_clock_1 1 0 2 30 190 NJ
+preplace netloc clk_wiz_0_clk_430 1 1 2 N 280 400J
+preplace netloc resetn_1 1 0 3 20 200 220J 260 410J
+preplace netloc VielEntity_0_PWM_Voltage 1 3 1 NJ
+preplace netloc c_counter_binary_0_THRESH0 1 2 1 400J
+preplace netloc clk_wiz_0_clk_12 1 1 1 210
+levelinfo -pg 1 0 120 310 540 690 -top 0 -bot 340
+",
+}
+

@@ -1,1 +1,0 @@
--wto "1732e01dadce445bbd6e1304cd737031" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "SineWave100s_behav" "xil_defaultlib.SineWave100s" -log "elaborate.log" 

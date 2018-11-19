@@ -1,0 +1,472 @@
+
+*** Running vivado
+    with args -log Full_VielEntity_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Full_VielEntity_0_0.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Full_VielEntity_0_0.tcl -notrace
+Command: synth_design -top Full_VielEntity_0_0 -part xc7a35ticsg324-1L -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17348 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 388.598 ; gain = 101.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Full_VielEntity_0_0' [c:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/bd/Full/ip/Full_VielEntity_0_0/synth/Full_VielEntity_0_0.vhd:67]
+INFO: [Synth 8-3491] module 'VielEntity' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:34' bound to instance 'U0' of component 'VielEntity' [c:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/bd/Full/ip/Full_VielEntity_0_0/synth/Full_VielEntity_0_0.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'VielEntity' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:43]
+INFO: [Synth 8-3491] module 'LoadTest' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/LoadTest.vhd:34' bound to instance 'U1' of component 'LoadTest' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'LoadTest' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/LoadTest.vhd:43]
+INFO: [Synth 8-3491] module 'SineWave100s' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:32' bound to instance 'SineGen' of component 'SineWave100s' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/LoadTest.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'SineWave100s' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:39]
+WARNING: [Synth 8-614] signal 'resetn' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:151]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:151]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:151]
+INFO: [Synth 8-256] done synthesizing module 'SineWave100s' (1#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/SineWave100s.vhd:39]
+INFO: [Synth 8-3491] module 'cargaModel' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:41' bound to instance 'Load' of component 'cargaModel' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/LoadTest.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'cargaModel' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'cargaModel' (2#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'LoadTest' (3#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/LoadTest.vhd:43]
+INFO: [Synth 8-3491] module 'DAC12bits' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:34' bound to instance 'Dac1' of component 'DAC12bits' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'DAC12bits' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:42]
+INFO: [Synth 8-3491] module 'CA2sToUnsigned' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/CA2sToUnsigned.vhd:31' bound to instance 'CaConv' of component 'CA2sToUnsigned' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'CA2sToUnsigned' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/CA2sToUnsigned.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'CA2sToUnsigned' (4#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/CA2sToUnsigned.vhd:36]
+INFO: [Synth 8-3491] module 'PWM_12b' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:32' bound to instance 'DAC_o' of component 'PWM_12b' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'PWM_12b' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:40]
+WARNING: [Synth 8-614] signal 'resetn' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:46]
+WARNING: [Synth 8-614] signal 'count' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:46]
+WARNING: [Synth 8-614] signal 'D' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:46]
+WARNING: [Synth 8-614] signal 'enable' is read in the process but is not in the sensitivity list [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'PWM_12b' (5#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/PWM_12b.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'DAC12bits' (6#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:42]
+INFO: [Synth 8-3491] module 'DAC12bits' declared at 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/DAC12bits.vhd:34' bound to instance 'Dac2' of component 'DAC12bits' [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'VielEntity' (7#1) [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/new/VielEntity.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Full_VielEntity_0_0' (8#1) [c:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/bd/Full/ip/Full_VielEntity_0_0/synth/Full_VielEntity_0_0.vhd:67]
+WARNING: [Synth 8-3331] design CA2sToUnsigned has unconnected port In16Ca2[15]
+WARNING: [Synth 8-3331] design CA2sToUnsigned has unconnected port In16Ca2[14]
+WARNING: [Synth 8-3331] design CA2sToUnsigned has unconnected port In16Ca2[13]
+WARNING: [Synth 8-3331] design CA2sToUnsigned has unconnected port In16Ca2[12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 443.250 ; gain = 156.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 443.250 ; gain = 156.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 443.250 ; gain = 156.172
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 751.840 ; gain = 1.832
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 751.840 ; gain = 464.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticsg324-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 751.840 ; gain = 464.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 751.840 ; gain = 464.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 751.840 ; gain = 464.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
++---Multipliers : 
+	                30x32  Multipliers := 1     
+	                29x32  Multipliers := 1     
+	                25x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SineWave100s 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module cargaModel 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
++---Multipliers : 
+	                30x32  Multipliers := 1     
+	                29x32  Multipliers := 1     
+	                25x32  Multipliers := 2     
+Module CA2sToUnsigned 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:111]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:96]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:123]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:120]
+DSP Report: Generating DSP U0/U1/Load/Gain_out1, operation Mode is: A*(B:0xee).
+DSP Report: operator U0/U1/Load/Gain_out1 is absorbed into DSP U0/U1/Load/Gain_out1.
+DSP Report: Generating DSP U0/U1/Load/denom_gain1_mul_temp, operation Mode is: A*B.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain1_mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain1_mul_temp, operation Mode is: A*(B:0xc0cc).
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain1_mul_temp, operation Mode is: (PCIN>>17)+(A:0xc0cc)*B.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain1_mul_temp is absorbed into DSP U0/U1/Load/denom_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/s_denom_acc_out2, operation Mode is: PCIN+A:B+C.
+DSP Report: operator U0/U1/Load/s_denom_acc_out2 is absorbed into DSP U0/U1/Load/s_denom_acc_out2.
+DSP Report: Generating DSP U0/U1/Load/s_denom_acc_out2, operation Mode is: PCIN-A:B-C.
+DSP Report: operator U0/U1/Load/s_denom_acc_out2 is absorbed into DSP U0/U1/Load/s_denom_acc_out2.
+DSP Report: Generating DSP U0/U1/Load/denom_gain2_mul_temp, operation Mode is: A*B.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain2_mul_temp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain2_mul_temp, operation Mode is: (A:0x13ff5)*B.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/denom_gain2_mul_temp, operation Mode is: (PCIN>>17)+(A:0x13ff5)*B.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: operator U0/U1/Load/denom_gain2_mul_temp is absorbed into DSP U0/U1/Load/denom_gain2_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/nume_gain1_mul_temp, operation Mode is: (A:0x3f65ab51)*B.
+DSP Report: operator U0/U1/Load/nume_gain1_mul_temp is absorbed into DSP U0/U1/Load/nume_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/nume_gain1_mul_temp is absorbed into DSP U0/U1/Load/nume_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/nume_gain1_mul_temp, operation Mode is: (PCIN>>17)+(A:0x3f65ab51)*B.
+DSP Report: operator U0/U1/Load/nume_gain1_mul_temp is absorbed into DSP U0/U1/Load/nume_gain1_mul_temp.
+DSP Report: operator U0/U1/Load/nume_gain1_mul_temp is absorbed into DSP U0/U1/Load/nume_gain1_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/nume_gain_b0_mul_temp, operation Mode is: (A:0x9a54b2)*B.
+DSP Report: operator U0/U1/Load/nume_gain_b0_mul_temp is absorbed into DSP U0/U1/Load/nume_gain_b0_mul_temp.
+DSP Report: operator U0/U1/Load/nume_gain_b0_mul_temp is absorbed into DSP U0/U1/Load/nume_gain_b0_mul_temp.
+DSP Report: Generating DSP U0/U1/Load/nume_gain_b0_mul_temp, operation Mode is: (PCIN>>17)+(A:0x9a54b2)*B.
+DSP Report: operator U0/U1/Load/nume_gain_b0_mul_temp is absorbed into DSP U0/U1/Load/nume_gain_b0_mul_temp.
+DSP Report: operator U0/U1/Load/nume_gain_b0_mul_temp is absorbed into DSP U0/U1/Load/nume_gain_b0_mul_temp.
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[22]' (FDC) to 'U0/U1/Load/s_state_out1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[23]' (FDC) to 'U0/U1/Load/s_state_out1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[24]' (FDC) to 'U0/U1/Load/s_state_out1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[25]' (FDC) to 'U0/U1/Load/s_state_out1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[26]' (FDC) to 'U0/U1/Load/s_state_out1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[27]' (FDC) to 'U0/U1/Load/s_state_out1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[28]' (FDC) to 'U0/U1/Load/s_state_out1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[29]' (FDC) to 'U0/U1/Load/s_state_out1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out1_reg[30]' (FDC) to 'U0/U1/Load/s_state_out1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[22]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[23]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[24]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[25]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[26]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[27]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[28]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[29]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/U1/Load/s_state_out2_1_reg[30]' (FDC) to 'U0/U1/Load/s_state_out2_1_reg[31]'
+INFO: [Synth 8-3332] Sequential element (U0/U1/SineGen/count_reg_rep[7]) is unused and will be removed from module Full_VielEntity_0_0.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0i_4/\U0/U1/SineGen/count_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 751.840 ; gain = 464.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++--------------------+----------------------+---------------+----------------+
+|Module Name         | RTL Object           | Depth x Width | Implemented As | 
++--------------------+----------------------+---------------+----------------+
+|SineWave100s        | tab[0]               | 128x16        | LUT            | 
+|Full_VielEntity_0_0 | U0/U1/SineGen/tab[0] | 128x16        | LUT            | 
++--------------------+----------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name         | DSP Mapping                 | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cargaModel          | A*(B:0xee)                  | 16     | 9      | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | A*B                         | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+A*B              | 15     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | A*(B:0xc0cc)                | 18     | 17     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+(A:0xc0cc)*B     | 17     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | PCIN+A:B+C                  | 14     | 18     | 32     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | PCIN-A:B-C                  | 30     | 18     | 48     | -      | -1     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | A*B                         | 18     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+A*B              | 15     | 12     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (A:0x13ff5)*B               | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+(A:0x13ff5)*B    | 18     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (A:0x3f65ab51)*B            | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+(A:0x3f65ab51)*B | 25     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (A:0x9a54b2)*B              | 25     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Full_VielEntity_0_0 | (PCIN>>17)+(A:0x9a54b2)*B   | 25     | 15     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------------+-----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 817.430 ; gain = 530.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 817.934 ; gain = 530.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:87]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.srcs/sources_1/imports/VHDL/cargaModel.vhd:90]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:38 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    64|
+|2     |DSP48E1   |    13|
+|3     |DSP48E1_1 |     2|
+|4     |LUT1      |    64|
+|5     |LUT2      |   121|
+|6     |LUT3      |     3|
+|7     |LUT4      |    57|
+|8     |LUT5      |     7|
+|9     |LUT6      |    45|
+|10    |MUXF7     |    11|
+|11    |FDCE      |    72|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------+-------------+------+
+|      |Instance      |Module       |Cells |
++------+--------------+-------------+------+
+|1     |top           |             |   459|
+|2     |  U0          |VielEntity   |   459|
+|3     |    Dac1      |DAC12bits    |    24|
+|4     |      DAC_o   |PWM_12b_1    |    24|
+|5     |    Dac2      |DAC12bits_0  |     2|
+|6     |      DAC_o   |PWM_12b      |     2|
+|7     |    U1        |LoadTest     |   433|
+|8     |      Load    |cargaModel   |   364|
+|9     |      SineGen |SineWave100s |    69|
++------+--------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 828.977 ; gain = 233.309
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 828.977 ; gain = 541.898
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 90 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+79 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:42 . Memory (MB): peak = 828.977 ; gain = 554.867
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.runs/Full_VielEntity_0_0_synth_1/Full_VielEntity_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 8 cell refs.
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/erich/Documents/Digital_Designs/Xilinx/PruebaCargaRLC/PruebaCargaRLC.runs/Full_VielEntity_0_0_synth_1/Full_VielEntity_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Full_VielEntity_0_0_utilization_synth.rpt -pb Full_VielEntity_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 828.977 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 18 23:06:57 2018...

@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/erich/Documents/Digital_Designs/Xilinx/PModtestArty/PModtestArty.srcs/sources_1/imports/VHDL/PWM_12b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PWM_12b
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/erich/Documents/Digital_Designs/Xilinx/PModtestArty/PModtestArty.srcs/sources_1/new/PmodPWM_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity PmodPWM_test
